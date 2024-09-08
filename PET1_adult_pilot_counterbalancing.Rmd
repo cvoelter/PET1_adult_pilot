@@ -1,0 +1,171 @@
+---
+title: "PET1_adult_pilot_counterbalancing"
+author: "CV"
+date: "2024-07-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Counterbalancing of stimuli
+The counterbalancing and randomization scheme followed these rules:
+1. attention check video is shown first,
+
+2. version (1, 2) blocked, order counterbalanced,
+
+3. within version blocks, there are two sub-blocks. In each sub-block, one video of every experiment (continuity, gravity, solidity) is shown. Each sub-block contains at least one video of each condition (test vs control).
+
+Apart from this the order was randomly determined and different for every participant.
+
+Following a 9-point calibration and a validation of less than 1 degree of visual angle, the adults will be presented with all 13 videos in one run. The videos will start after the gaze is detected for 100 msec on a centrally presented attention-getter. 
+```{r}
+# Load necessary library
+library(dplyr)
+
+# Define the data frame
+videos <- data.frame(
+  video_file = c("attentioncheck.mp4", "continuity_ver1_n_cont.mp4", "continuity_ver1_n_test.mp4", 
+                 "continuity_ver2_n_cont.mp4", "continuity_ver2_n_test.mp4", "gravity_ver1_n_cont.mp4", 
+                 "gravity_ver1_n_test.mp4", "gravity_ver2_n_cont.mp4", "gravity_ver2_n_test.mp4", 
+                 "solidity_ver2_n_cont.mp4", "solidity_ver2_n_test.mp4", "solidity_ver1_n_cont.mp4", 
+                 "solidity_ver1_n_test.mp4"),
+  experiment = c("attention_check", "continuity", "continuity", "continuity", "continuity", 
+                 "gravity", "gravity", "gravity", "gravity", "solidity", "solidity", "solidity", "solidity"),
+  version = c(NA, "ver1", "ver1", "ver2", "ver2", "ver1", "ver1", "ver2", "ver2", "ver2", "ver2", "ver1", "ver1"),
+  condition = c(NA, "cont", "test", "cont", "test", "cont", "test", "cont", "test", "cont", "test", "cont", "test")
+)
+
+# Function to create a block ensuring it contains a mix of conditions
+create_block <- function(available_videos) {
+  experiments <- unique(available_videos$experiment)
+  conditions <- unique(available_videos$condition)
+  
+  while(TRUE) {
+    block <- available_videos %>%
+      group_by(experiment) %>%
+      sample_n(1) %>%
+      ungroup()
+    
+    if (n_distinct(block$condition) == length(conditions)) {
+      return(block)
+    }
+  }
+}
+
+# Function to generate a single participant's counterbalancing
+generate_counterbalancing <- function(participant_id, version_first) {
+  # Select videos for each version
+  version_1_videos <- videos %>% filter(version == "ver1")
+  version_2_videos <- videos %>% filter(version == "ver2")
+  
+  # Create blocks for the first version
+  if (version_first == "ver1") {
+    block_1_ver1 <- create_block(version_1_videos)
+    remaining_ver1 <- version_1_videos %>% filter(!video_file %in% block_1_ver1$video_file)
+    block_2_ver1 <- remaining_ver1
+    
+    block_1_ver2 <- create_block(version_2_videos)
+    remaining_ver2 <- version_2_videos %>% filter(!video_file %in% block_1_ver2$video_file)
+    block_2_ver2 <- remaining_ver2
+  } else {
+    block_1_ver2 <- create_block(version_2_videos)
+    remaining_ver2 <- version_2_videos %>% filter(!video_file %in% block_1_ver2$video_file)
+    block_2_ver2 <- remaining_ver2
+    
+    block_1_ver1 <- create_block(version_1_videos)
+    remaining_ver1 <- version_1_videos %>% filter(!video_file %in% block_1_ver1$video_file)
+    block_2_ver1 <- remaining_ver1
+  }
+  
+  # Randomize the order within each block
+  block_1_ver1 <- block_1_ver1[sample(nrow(block_1_ver1)), ]
+  block_2_ver1 <- block_2_ver1[sample(nrow(block_2_ver1)), ]
+  block_1_ver2 <- block_1_ver2[sample(nrow(block_1_ver2)), ]
+  block_2_ver2 <- block_2_ver2[sample(nrow(block_2_ver2)), ]
+  
+  # Compile the full order
+  if (version_first == "ver1") {
+    full_order <- c("attentioncheck.mp4", block_1_ver1$video_file, block_2_ver1$video_file, block_1_ver2$video_file, block_2_ver2$video_file)
+  } else {
+    full_order <- c("attentioncheck.mp4", block_1_ver2$video_file, block_2_ver2$video_file, block_1_ver1$video_file, block_2_ver1$video_file)
+  }
+  
+  data.frame(participant_id = participant_id, video_order = full_order, stringsAsFactors = FALSE)
+}
+
+# Generate counterbalancing for 40 participants
+set.seed(123) # Ensure reproducibility
+participant_ids <- 1:40
+versions <- rep(c("ver1", "ver2"), each = 20)
+orders <- lapply(1:40, function(i) generate_counterbalancing(participant_ids[i], versions[i]))
+
+# Combine all orders into a single data frame
+counterbalancing <- do.call(rbind, orders)
+
+# View the resulting counterbalancing
+print(counterbalancing)
+
+```
+
+```{r}
+library(tidyr)
+# Adding trial numbers and splitting video_file into original variables
+counterbalancing_data <- counterbalancing %>%
+  group_by(participant_id) %>%
+  mutate(trial_number = row_number()) %>%
+  ungroup() %>%
+  mutate(video_file = video_order)%>%
+  separate(video_order, into = c("experiment", "version", NA, "condition"), sep =  "_", extra = "merge", fill = "right") %>%
+  mutate(condition = gsub(".mp4", "", condition),
+         experiment = gsub(".mp4", "", experiment))
+
+# Ensure each video is shown equally often
+video_counts <- counterbalancing %>%
+  group_by(video_order) %>%
+  summarise(count = n()) %>%
+  arrange(desc(count))
+
+table(counterbalancing_data$condition, counterbalancing_data$trial_number )
+table(counterbalancing_data$experiment, counterbalancing_data$trial_number )
+table(counterbalancing_data$version, counterbalancing_data$trial_number )
+
+table(counterbalancing_data$condition, counterbalancing_data$version )
+table(counterbalancing_data$experiment, counterbalancing_data$condition )
+table(counterbalancing_data$version, counterbalancing_data$experiment )
+
+table(counterbalancing_data$condition, counterbalancing_data$participant_id )
+table(counterbalancing_data$experiment, counterbalancing_data$participant_id )
+table(counterbalancing_data$version, counterbalancing_data$participant_id )
+
+table(counterbalancing_data$video_file, counterbalancing_data$participant_id )
+```
+```{r}
+video_data<-read.csv(file = "Pet_adult_pilot_video_list.csv")%>%
+  filter(!is.na(duration))%>%
+  select(video_file, audio_file, duration)
+```
+
+
+```{r}
+counterbalancing_data<-counterbalancing_data %>%
+  full_join(video_data)
+
+counterbalancing_data$participant_id <- sprintf("subj.%02d", counterbalancing_data$participant_id)
+
+write.csv(counterbalancing_data, file = "PET_adult_pilot_counterbalancing.csv")
+```
+check that in each block both conditions are shown.
+```{r}
+check<-counterbalancing_data %>%
+  mutate(block = as.numeric(ifelse(trial_number>=2 & trial_number<=4, 1,
+                            ifelse(trial_number>=5 & trial_number<=7, 2,
+                                   ifelse(trial_number>=8 & trial_number<=10, 3,
+                                          ifelse(trial_number>=11 & trial_number<=13, 4,""))))))%>%
+  group_by(participant_id, block)%>%
+  summarise(sum_test = sum(condition=="test"))
+
+
+```
+
