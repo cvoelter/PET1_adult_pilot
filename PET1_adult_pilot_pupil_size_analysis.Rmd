@@ -12,11 +12,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 #rm(list = ls())
 library(tidyverse)
-
-library(exactRankTests)
 library(lme4)
 library(naniar)
-#library(gazer)
+library(gazer)
 library(zoo)
 library(arrow)
 library(readr)
@@ -35,97 +33,131 @@ col2 <- 'black'
 col3 <- 'indianred'
 
 
-#load(file = ".RData")
+load(file = "PET1_adult_pilot_workspace.RData")
 ```
 
-# Convert data files to parquet format
+# Loading sample reports
 ```{r}
-# Set the directory path
-dir_path <- "C:/Users/christoph_voelter/MPI_Nextcloud/Eyetracking/Eyelink/DataViewerProjects/PET1_dataviewer/Output"
+# Set the directory path where the parquet files are saved
+parquet_dir <- "data/"
 
-# List all RESULTS_FILE.txt files in subdirectories
-file_list <- list.files(path = dir_path, pattern = "PET1_adultpilot_samplereports", recursive = TRUE, full.names = TRUE)
+# List all parquet files in the directory
+parquet_files <- list.files(path = parquet_dir, pattern = "\\.parquet$", full.names = TRUE)
 
-sample.data <- file_list %>%
-  lapply(function(file) {
-    df <- read.table(file,
-                     header = TRUE,
-                     na.strings = ".",
-                     sep = "\t",
-                     fill = TRUE)
-    df <- df %>%
-      mutate(
-        RECORDING_SESSION_LABEL = as.character(RECORDING_SESSION_LABEL),
-        Session_Name_ = as.character(Session_Name_)
-      )
-    df
-  }) %>%
+# Read all parquet files and combine them into one dataframe
+sample.data <- parquet_files %>%
+  lapply(read_parquet) %>%
   bind_rows()
 
-  
-# sample.data <- read.table("C:/Users/christoph_voelter/MPI_Nextcloud/Eyetracking/Eyelink/DataViewerProjects/fluidreasoning1/Output/fluidreasoning_samplereport.txt", header = TRUE, na.strings = ".", sep = "\t", fill = TRUE)
-
-library(arrow)
-write_parquet(sample.data, "data/pet1_adultpilot_samplereport.parquet")
-
 ```
 
 
-# Loading data
+# Loading demographic data
+```{r}
+demo.data <- read_csv("data/PET1_adult_pilot_demo_data.csv") %>%
+  mutate(subject = as.character(subject))%>%
+  select(-comment)
+```
+* check which subject names are present in sample.data and demo.data
+```{r}
+# Extract levels from both data frames for the subject variable
+demo_subject_levels <- unique(demo.data$subject)
+sample_subject_levels <- unique(sample.data$Session_Name_)
+sample_RECORDING_SESSION_LABEL_levels <- unique(sample.data$RECORDING_SESSION_LABEL)
+
+length(unique(sample.data$Session_Name_))
+
+# Find the matching levels
+matching_levels <- intersect(demo_subject_levels, sample_subject_levels)
+
+# Number of matching levels
+num_matching <- length(matching_levels)
+
+# Display the result
+cat("Number of matching levels:", num_matching, "\n")
+cat("Matching levels:", matching_levels, "\n")
+
+# Find the non-matching levels in each data frame
+non_matching_demo <- setdiff(demo_subject_levels, sample_subject_levels)
+non_matching_sample <- setdiff(sample_subject_levels, demo_subject_levels)
+
+# Display the results
+cat("Non-matching levels in demo.data:", non_matching_demo, "\n")
+cat("Non-matching levels in sample_data:", non_matching_sample, "\n")
+```
+
+# Loading video data
 ```{r}
 ## time.frame for interpolation
 max.time <- 38600
 min.time <- 0
 time.frame <- seq(from = min.time, to = max.time, by = 1)
 xx <- as.data.frame(time.frame)
-baseline.start<-0
-baseline.end<-3000
-start_ip <- 3000
-# 
-# demo.data <- read_csv("data/VoE_Support_demographics and counterbalancing.csv") %>%
-#   mutate(EDF1=fct_recode(EDF1, Georgia_2="Georgia2", Cheynna_1="Cheynna1"))%>%
-#   separate(EDF1, c("subject", "xx"), sep = "_")%>%
-#   select(-comment)
-
+# baseline.start<-0
+# baseline.end<-3000
+# start_ip <- 3000
 video.data <- read_csv("data/PET_adult_pilot_video_list.csv")
 video.data_variable_names <- colnames(video.data)
+```
 
-sample.data <- read_parquet(file = "data/pet1_adultpilot_samplereport.parquet")%>%
+# Merging data
+```{r}
+sample.data <- sample.data%>%
   rename(trial = "Trial_Index_") %>%
   mutate(time.frame = TIMESTAMP - IP_START_TIME,
          subject = Session_Name_)%>%
   full_join(video.data) %>%
-  select(RECORDING_SESSION_LABEL, subject, trial, TRIAL_INDEX, time.frame, IP_START_TIME, TIMESTAMP, RIGHT_GAZE_X, RIGHT_GAZE_Y, RIGHT_IN_BLINK, RIGHT_IN_SACCADE, RIGHT_PUPIL_SIZE, RIGHT_ACCELERATION_X, RIGHT_ACCELERATION_Y, RIGHT_VELOCITY_X, RIGHT_VELOCITY_Y, LEFT_GAZE_X, LEFT_GAZE_Y, LEFT_IN_BLINK, LEFT_IN_SACCADE, LEFT_PUPIL_SIZE, LEFT_ACCELERATION_X, LEFT_ACCELERATION_Y, LEFT_VELOCITY_X, LEFT_VELOCITY_Y,  SAMPLE_MESSAGE, all_of(video.data_variable_names))          
+  #inner_join(demo.data)%>%
+  select(RECORDING_SESSION_LABEL, subject, trial, TRIAL_INDEX, time.frame, IP_START_TIME, TIMESTAMP, RIGHT_GAZE_X, RIGHT_GAZE_Y, RIGHT_IN_BLINK, RIGHT_IN_SACCADE, RIGHT_PUPIL_SIZE, RIGHT_ACCELERATION_X, RIGHT_ACCELERATION_Y, RIGHT_VELOCITY_X, RIGHT_VELOCITY_Y, LEFT_GAZE_X, LEFT_GAZE_Y, LEFT_IN_BLINK, LEFT_IN_SACCADE, LEFT_PUPIL_SIZE, LEFT_ACCELERATION_X, LEFT_ACCELERATION_Y, LEFT_VELOCITY_X, LEFT_VELOCITY_Y,  SAMPLE_MESSAGE, all_of(video.data_variable_names)) #test_date, birth_date, gender, average_validation_value_right, average_validation_value_left 
 
 max(sample.data$trial)
+
+
+
 ```
 
 # Pupil size
 
 ## Artefact check
 *Plot raw data
-```{r}
-raw_data_plot<-ggplot(data = sample.data, aes(x = time.frame, y = LEFT_PUPIL_SIZE)) +
-  ylab("Pupil size") +
-  xlab("Time (in ms)") +
-  geom_point(alpha = 1, size = 0.5, color = "darkorange") +
-  geom_point(aes(y = RIGHT_PUPIL_SIZE), alpha = 1, size = 0.5, color = "dodgerblue") +
-  facet_grid(video_file~subject)+
- # xlim(0, max.time) +
-    theme_bw()+
-  scale_color_manual(values=c("darkorange", "dodgerblue"))+
-  scale_fill_manual(values=c("darkorange", "dodgerblue"))+
-  theme(panel.grid.major.x = element_blank(),
-        panel.grid.minor.x = element_blank(),
-        panel.grid.major.y = element_blank(),
-        panel.grid.minor.y = element_blank(),
-        legend.title = element_blank(), legend.position = "top", legend.text=element_text(size=12))
 
-#raw_data_plot
-ggsave(raw_data_plot, filename = "graphs/PET1_adult_pilot_pupil_size_raw.png", width=10, height=16)
+```{r}
+
+# Loop through each level of video_file
+unique_videos <- unique(sample.data$video_file)
+
+for (video in unique_videos) {
+  
+  # Filter data for the current video file
+  video_data <- sample.data %>% filter(video_file == video, !is.na(subject))
+  
+  # Create the plot for the current video
+  raw_data_plot <- ggplot(data = video_data, aes(x = time.frame, y = LEFT_PUPIL_SIZE)) +
+    ylab("Pupil size") +
+    xlab("Time (in ms)") +
+    geom_point(alpha = 1, size = 0.5, color = "darkorange") +
+    geom_point(aes(y = RIGHT_PUPIL_SIZE), alpha = 1, size = 0.5, color = "dodgerblue") +
+    facet_wrap(~ subject, ncol = 8, nrow = 5) +   # 8 columns, 5 rows
+    theme_bw() +
+    scale_color_manual(values=c("darkorange", "dodgerblue")) +
+    scale_fill_manual(values=c("darkorange", "dodgerblue")) +
+    theme(panel.grid.major.x = element_blank(),
+          panel.grid.minor.x = element_blank(),
+          panel.grid.major.y = element_blank(),
+          panel.grid.minor.y = element_blank(),
+          legend.title = element_blank(), 
+          legend.position = "top", 
+          legend.text = element_text(size = 12))
+  
+  # Save the plot
+  ggsave(filename = paste0("graphs/", video, "_left_pupil_raw.png"), plot = raw_data_plot, width = 18, height = 12)
+}
+
 ```
 
-## Artefact correction
+
+
+### Artefact correction
 ```{r}
 speed <- function(x, y) {
     diff <- diff(x) / diff(y)
@@ -194,7 +226,7 @@ sample.data <- sample.data %>%
   full_join(median_speed_data) %>%
   mutate(
     LEFT_MAD = median(abs(LEFT_pupil_speed - LEFT_median_speed), na.rm = TRUE),
-    LEFT_MAD_Threshold = LEFT_median_speed + (5 * LEFT_MAD),
+    LEFT_MAD_Threshold = LEFT_median_speed + (8 * LEFT_MAD),
     # Factor 8
     LEFT_PUPIL_SIZE_no_artefacts = ifelse(
       LEFT_pupil_speed >= LEFT_MAD_Threshold,
@@ -202,7 +234,7 @@ sample.data <- sample.data %>%
       LEFT_PUPIL_SIZE_no_blinks
     ),
     RIGHT_MAD = median(abs(RIGHT_pupil_speed - RIGHT_median_speed), na.rm = TRUE),
-    RIGHT_MAD_Threshold = RIGHT_median_speed + (5 * RIGHT_MAD),
+    RIGHT_MAD_Threshold = RIGHT_median_speed + (8 * RIGHT_MAD),
     # Factor 8
     RIGHT_PUPIL_SIZE_no_artefacts = ifelse(
       RIGHT_pupil_speed >= RIGHT_MAD_Threshold,
@@ -282,7 +314,44 @@ sample.data <- sample.data %>%
 
 The preprocessing steps conducted in this study aimed to enhance the quality of pupillometry data. Initially, blink artifacts were removed by extending the detected blinks by 100 ms. Subsequently, the speed of pupil diameter changes over time was calculated . Median speed values were then computed for each recording session to serve as a baseline for identifying outliers. Outliers were detected based on the median absolute deviation (MAD) method, with a threshold set at eight times the MAD. Additionally, based on visual inspection of the data we excluded values with leading or lagging NA values within a window of the next 15 entries. Finally, missing values were interpolated using a spline method to ensure the continuity of the pupil size data. Overall, these preprocessing steps aimed to mitigate artifacts and enhance the reliability of the pupillometry dataset for subsequent analyses.
 
-### Plotting of artefact checks
+* Plotting of artefact checks
+
+
+```{r}
+
+# Loop through each level of video_file
+unique_videos <- unique(sample.data$video_file)
+
+for (video in unique_videos) {
+  
+  # Filter data for the current video file
+  video_data <- sample.data %>% filter(video_file == video, !is.na(subject))
+  
+  # Create the plot for the current video
+  raw_data_plot <- ggplot(data = video_data, aes(x = time.frame, y = LEFT_pupil.inter)) +
+    ylab("Pupil size") +
+    xlab("Time (in ms)") +
+    geom_point(alpha = 1, size = 0.5, color = "darkorange") +
+    geom_point(aes(y = RIGHT_pupil.inter), alpha = 1, size = 0.5, color = "dodgerblue") +
+    facet_wrap(~ subject, ncol = 8, nrow = 5) +   # 8 columns, 5 rows
+    theme_bw() +
+    scale_color_manual(values=c("darkorange", "dodgerblue")) +
+    scale_fill_manual(values=c("darkorange", "dodgerblue")) +
+    theme(panel.grid.major.x = element_blank(),
+          panel.grid.minor.x = element_blank(),
+          panel.grid.major.y = element_blank(),
+          panel.grid.minor.y = element_blank(),
+          legend.title = element_blank(), 
+          legend.position = "top", 
+          legend.text = element_text(size = 12))
+  
+  # Save the plot
+  ggsave(filename = paste0("graphs/", video, "_pupil_blinkcorrected_interpolated.png"), plot = raw_data_plot, width = 18, height = 12)
+}
+
+```
+
+
 ```{r}
 artefact_check<-ggplot(data = sample.data, aes(x = time.frame, y = LEFT_PUPIL_SIZE_no_blinks)) +
   ylab("Pupil size") +

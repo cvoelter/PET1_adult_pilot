@@ -1,0 +1,24 @@
+---
+title: "PET_adult_pilot_AoI_Analysis"
+output: html_document
+date: "2024-09-25"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggpubr)
+```
+
+```{r}
+aoi_data <- read_delim("data/PET1_adultpilot_AoI_report.txt", na=".", delim="\t")
+```
+```{r}
+ggplot(data = aoi_data, aes(x=condition, y=IA_DWELL_TIME))+
+  geom_boxplot(alpha=0.5)+
+  facet_grid(experiment~IA_LABEL)+
+  ylab("Dwell time")+xlab("Condition")+
+  theme_bw()#+
+  #stat_compare_means(paired = TRUE, method = "t.test", label.y = 1500 )
+```
+
