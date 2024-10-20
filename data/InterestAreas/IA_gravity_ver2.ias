@@ -1,0 +1,4 @@
+﻿# EyeLink Interest Area Set created on Thu Sep 26 16:29:37 CEST 2024
+# Interest area set file created using: 105912.edf. Interest Period: video_ip. Use Substring Matching at Start Event:true. Start Event Type:MESSAGE. Value:video_frame1. Offset:0. End Event Type:MESSAGE. Use Substring Matching at End Event:true. Value:blank_screen. Offset:0.
+RECTANGLE	21	633.0	412.0	1583.0	1050.0	IA_gravity_ver2_gap
+ELLIPSE	22	1583.0	455.0	1793.0	637.0	IA_gravity_ver2_apple

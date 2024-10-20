@@ -1,0 +1,30 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+pupil_size_avg ~ condition + s(time, k = 20) + s(time, by = condition, 
+    k = 20) + s(Xgaze, Ygaze) + s(time, Event, bs = "fs", m = 1) + 
+    s(time, subject, bs = "fs", m = 1)
+
+Parametric coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)    212.828     18.591  11.448   <2e-16 ***
+conditiontest   -5.099     21.142  -0.241    0.809    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                            edf    Ref.df      F p-value    
+s(time)               1.197e+01 1.421e+01  9.366  <2e-16 ***
+s(time):conditioncont 1.841e+00 2.031e+00  0.976   0.400    
+s(time):conditiontest 7.335e-03 8.999e-03  0.043   0.984    
+s(Xgaze,Ygaze)        2.403e+01 2.725e+01 12.896  <2e-16 ***
+s(time,Event)         5.065e+02 7.180e+02 50.628  <2e-16 ***
+s(time,subject)       1.616e+02 3.590e+02  0.838  <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Rank: 1167/1168
+R-sq.(adj) =  0.984   Deviance explained = 98.8%
+-ML =  13961  Scale est. = 373.36    n = 2856

@@ -1,0 +1,701 @@
+---
+title: "PET - Adult Pilot: pupil size analysis"
+date: "17/10/2024"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+rm(list = ls())
+library(tidyverse)
+library(arrow)
+library(readr)
+
+
+#GAMM
+library(itsadug)
+packageVersion("itsadug")
+library(plotfunctions)
+packageVersion("plotfunctions")
+library(colorspace)
+packageVersion("colorspace")
+## Define colors:
+col1 <- 'pink1'
+col2 <- 'black'
+col3 <- 'indianred'
+load("workspaces/solidity2_workspace.RData")
+
+```
+
+# Loading preprocessed data 
+```{r}
+data.preprocessed <- read_parquet("data/PET1_adult_pilot_basecorrected_downsampled.parquet") %>%
+  ungroup() %>%
+  mutate(pupil_size_avg = rowMeans(cbind(LEFT_pupil.ds.inter, RIGHT_pupil.ds.inter), na.rm = FALSE),
+         Xgaze = rowMeans(cbind(Xgaze_LEFT, Xgaze_RIGHT), na.rm = TRUE),
+         Ygaze = rowMeans(cbind(Ygaze_LEFT, Ygaze_RIGHT), na.rm = TRUE))
+
+
+
+nrow(data.preprocessed %>% filter(is.na(LEFT_pupil.ds.inter)))
+nrow(data.preprocessed %>% filter(is.na(RIGHT_pupil.ds.inter)))
+nrow(data.preprocessed %>% filter(is.na(Xgaze_LEFT)))
+nrow(data.preprocessed %>% filter(is.na(Xgaze_RIGHT)))
+nrow(data.preprocessed %>% filter(is.na(Ygaze_LEFT)))
+nrow(data.preprocessed %>% filter(is.na(Ygaze_RIGHT)))
+nrow(data.preprocessed %>% filter(is.na(Xgaze)))
+nrow(data.preprocessed %>% filter(is.na(Ygaze)))
+```
+
+# Solidity - Ver 2
+```{r}
+data.preprocessed.solidity2 <- data.preprocessed %>%
+  filter(experiment == "solidity" & version == "ver2")
+```
+
+
+### GAMM
+
+
+* Plot gaze positions
+```{r}
+emptyPlot(c(0,1920), c(1080, 0), bty='o',
+          main="Gaze positions", xlab="Xgaze", ylab="Ygaze")
+points(data.preprocessed.solidity2$Xgaze, data.preprocessed.solidity2$Ygaze, pch=16, cex=.5, col=alpha(1), xpd=TRUE)
+abline(h=1080/2, v=1920/2, lty=1, col='white')
+abline(h=1080/2, v=1920/2, lty=2, col=1)
+```
+
+
+#### data preparation for GAMM
+
+* select interest period
+```{r}
+dat <- data.preprocessed.solidity2%>%
+  rename(time="bin_low")%>%
+  arrange(subject, condition, time)%>%#order dataframe
+  droplevels()
+
+dat$condition<-as.factor(dat$condition)
+dat$subject<-as.factor(dat$subject)
+```
+
+
+* Plot individiual variability in pupil size
+
+```{r}
+pupil_size_boxplot<-ggplot(dat)+
+  geom_boxplot(aes(x= reorder(subject, pupil_size_avg, FUN = median), y=pupil_size_avg))+
+  ylab("Pupil size (arbitrary units)")+
+  xlab("")+
+  theme_classic()+ 
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+
+pupil_size_gaze_position_plot<-ggplot(dat)+
+  geom_point(aes(x= Xgaze, y=Ygaze, color=pupil_size_avg), alpha=0.15)+
+  ylab("Y coordinates")+
+  xlab("X coordinates")+
+  theme_bw()+
+  xlim(0,1920)+
+  ylim(1080, 0)+
+  scale_colour_gradient(name= "Pupil size", low = "yellow", high = "darkblue")
+library(cowplot)
+pg_s1<-plot_grid(pupil_size_boxplot, pupil_size_gaze_position_plot, rel_widths=c(1, 1.2), labels=c("A", "B"))
+
+
+ggsave(pg_s1,file="graphs/solidity2/solidity2_pupil_size_sup_info.png", width=15, height=5, scale=0.7)
+
+```
+
+
+
+* fit GAMM
+
+```{r}
+# Defining events (time series):
+dat$Event <- interaction(dat$subject, dat$condition, drop=TRUE)
+
+gamm01 <- bam(pupil_size_avg ~ condition + s(time, k=20)+ s(time, by=condition, k=20) 
+          + s(Xgaze, Ygaze)
+          + s(time, Event, bs='fs', m=1)  + s(time, subject, bs='fs', m=1) 
+          , data=dat, nthreads=40, method="ML")
+
+gamm01.null <- bam(pupil_size_avg ~ s(time, k=20)+ 
+          + s(Xgaze, Ygaze)
+          + s(time, Event, bs='fs', m=1) + s(time, subject, bs='fs', m=1)
+          , data=dat, nthreads=40, method="ML")
+```
+
+
+```{r}
+summary_g1<-summary(gamm01)
+summary_g1
+
+sink("saves/solidity2_gam.txt")
+print(summary_g1)
+sink() 
+```
+
+
+```{r}
+gam.check(gamm01)
+acf(resid(gamm01), bty='n', main="ACF residuals model1")
+acf(resid(gamm01), plot=FALSE)
+
+compareML(gamm01, gamm01.null)
+AIC(gamm01, gamm01.null)
+
+```
+
+
+* difference curve
+```{r}
+plot_diff(gamm01, view="time", 
+          comp=list(condition=c("test", "cont")), rm.ranef=TRUE, main="Test - Control", 
+          las=1, ylab="Est. difference in pupil size", 
+            col=col2, hide.label = TRUE, plot = TRUE)
+
+plot_diff_gamm01<-plot_diff(gamm01, view="time", 
+          comp=list(condition=c("test", "cont")), rm.ranef=TRUE, main="Test - Control", 
+          las=1, ylab="Est. difference in pupil size", 
+            col=col2, hide.label = TRUE, plot = FALSE)
+
+x <- find_difference(plot_diff_gamm01$est, plot_diff_gamm01$CI, f=1.0, xVals=plot_diff_gamm01$time)
+
+plot_diff_gamm01<-ggplot(data=plot_diff_gamm01, aes(x=time, y=est))+
+  geom_hline(yintercept = 0)+
+  geom_path(lty=2)+
+  geom_ribbon(aes(x=time, ymin=est-CI, ymax=est+CI), alpha=0.2)+
+  theme_bw()+
+  scale_x_continuous(name="Time (in ms)", breaks=c(seq(from = min(plot_diff_gamm01$time), to = max(plot_diff_gamm01$time)+100, by = 1000)))+ ylab("Est. difference in pupil size")+ggtitle("Test - Control")+
+    theme(panel.grid.major.x = element_blank(),
+        panel.grid.minor.x = element_blank(),
+        panel.grid.major.y = element_blank(),
+        panel.grid.minor.y = element_blank())+
+  geom_segment(aes(x=x$start[1], xend=x$end[1], y=0, yend=0), color="red", lwd=1.1)+
+  geom_segment(aes(x=x$start[1], xend=x$start[1], y=-10, yend=10), color="red", lwd=0.7)+
+  geom_segment(aes(x=x$end[1], xend=x$end[1], y=-10, yend=10), color="red", lwd=0.7)+
+  geom_segment(aes(x=x$start[2], xend=x$end[2], y=0, yend=0), color="red", lwd=1.1)+
+  geom_segment(aes(x=x$start[2], xend=x$start[2], y=-10, yend=10), color="red", lwd=0.7)#+
+  # geom_segment(aes(x=x$end[2], xend=x$end[2], y=-10, yend=10), color="red", lwd=0.7)+
+  #   geom_segment(aes(x=x$start[3], xend=x$end[3], y=0, yend=0), color="red", lwd=1.1)+
+  # geom_segment(aes(x=x$start[3], xend=x$start[3], y=-10, yend=10), color="red", lwd=0.7)+
+  # geom_segment(aes(x=x$end[3], xend=x$end[3], y=-10, yend=10), color="red", lwd=0.7)+
+  #   geom_segment(aes(x=x$start[4], xend=x$end[4], y=0, yend=0), color="red", lwd=1.1)+
+  # geom_segment(aes(x=x$start[4], xend=x$start[4], y=-10, yend=10), color="red", lwd=0.7)+
+  # geom_segment(aes(x=x$end[4], xend=x$end[4], y=-10, yend=10), color="red", lwd=0.7)
+  
+ggsave(plot_diff_gamm01, filename = "graphs/solidity2/solidity2_GAMM_diffcurve.png", width=6, height=5, scale=0.7)
+
+```
+* plotting partial effects
+```{r}
+library(mgcViz)
+b <- getViz(gamm01)
+
+png("graphs/solidity2/solidity2_GAMM_partial_effect.png", width=25, height=20, units="cm", res=600)
+p1<-plot(b, allTerms = T)+theme_classic() + labs(title = NULL) 
+print(p1, pages = 1 )
+dev.off()
+
+
+```
+
+* Summed effects
+```{r}
+png("graphs/solidity2/solidity2_summed_effect.png", width=14, height=10, units="cm", res=600)
+plot_smooth(gamm01, view="time", cond=list(condition="cont"), rm.ranef=TRUE,
+  v0=0, col=col2, lwd=2, lty=6, rug=FALSE, se=1.96,
+  main="", ylab="Pupil (baseline corrected)", las=1,)
+plot_smooth(gamm01, view="time", cond=list(condition="test"), rm.ranef=TRUE,
+  v0=0, col=col3, lwd=2, lty=6, rug=FALSE, add=TRUE, xpd=TRUE, se=1.96)
+
+
+# legend
+legend('bottomright',
+       legend=c('Control', "Test"),
+       lty=rep(c(1,6), each=2), lwd=rep(c(1,2), each=2),
+       col=rep(c(col2, col3), 2), seg.len=1.5,
+       bty='n', cex=.85, ncol=2, xpd=TRUE)
+
+dev.off()
+
+```
+
+```{r}
+
+tmp <- gamm01$model
+#tmp$Event <- interaction(tmp$subject, tmp$condition, drop=TRUE)
+plot_modelfit(gamm01, view="time", event=tmp$Event,n = 5)
+
+```
+
+
+```{r}
+save.image(file = "workspaces/solidity2_workspace.RData")
+```
+
+
+
+## Plot aggregated pupil data
+```{r}
+dat.agg <-
+  dat %>%
+  group_by(time, condition) %>%
+  summarise(
+    mean.pupil.corrected.binned = mean(pupil_size_avg, na.rm = TRUE),
+    sd.pupil.corrected.binned = sd(pupil_size_avg, na.rm = TRUE),
+    se.pupil.corrected.binned = sd(pupil_size_avg, na.rm = TRUE) / sqrt(length(pupil_size_avg))
+  ) %>%
+  ungroup()
+
+```
+
+* Plot group level data
+```{r}
+agg_data_plot <-
+  ggplot(data = dat.agg, aes(x = time, y = mean.pupil.corrected.binned)) +
+  ylab("Pupil size (baseline corrected)") +
+  xlab("Time (in ms)") +
+  geom_point(
+    aes(x = time, y = mean.pupil.corrected.binned, color = condition),
+    alpha = 0.3,
+    size = 0.5
+  ) +
+  geom_ribbon(
+    aes(
+      ymin = mean.pupil.corrected.binned - se.pupil.corrected.binned,
+      ymax = mean.pupil.corrected.binned + se.pupil.corrected.binned,
+      fill = condition
+    ),
+    alpha = 0.3
+  ) +
+  theme_bw() +
+  scale_color_manual(values = c(test = "darkorange", cont= "dodgerblue"), labels = c(test ="Test", cont= "Control")) +
+  scale_fill_manual(values = c(test="darkorange", cont= "dodgerblue"), labels = c(test="Test", cont="Control")) +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    legend.title = element_blank(),
+    legend.position = c(0.9, 0.9),
+    legend.text = element_text(size = 12),
+    legend.key = element_blank(),
+    legend.background = element_rect(fill = "transparent")
+  )
+agg_data_plot
+```
+
+### Looking time analysis
+```{r}
+aoi_data <- read_delim("data/PET1_adultpilot_AoIReport.txt", na=".", delim="\t")
+
+aoi_data_solidity2 <- aoi_data %>%
+  filter(experiment == "solidity" & version == "ver2" & IP_LABEL == "IP_solidity2") %>%
+  select(subject = Session_Name_, IP_LABEL, IA_LABEL,IA_ID, Trial_Index_, condition, experiment, version,  video_file, DATA_FILE,  IA_AREA, IA_AVERAGE_FIX_PUPIL_SIZE,  IA_DWELL_TIME, "IA_DWELL_TIME_%", IA_FIXATION_COUNT, IA_MAX_FIX_PUPIL_SIZE, INTEREST_AREA_FIXATION_SEQUENCE, TRIAL_DWELL_TIME, TRIAL_FIXATION_COUNT, TRIAL_IA_COUNT, TRIAL_TOTAL_VISITED_IA_COUNT )%>%
+  group_by(subject, IP_LABEL, Trial_Index_, condition, experiment, version,  video_file, DATA_FILE, INTEREST_AREA_FIXATION_SEQUENCE) %>%
+  summarise(dwell_time_allAoI = sum(IA_DWELL_TIME, na.rm = TRUE))
+```
+Transitions between IAs
+```{r}
+library(dplyr)
+library(purrr)
+
+
+# Function to count transitions between 21 and 22
+count_transitions <- function(seq) {
+  # Clean and split the sequence
+  seq_clean <- gsub("\\[|\\]", "", seq)  # Remove brackets
+  seq_clean <- gsub(" ", "", seq_clean)   # Remove spaces
+  seq_split <- unlist(strsplit(seq_clean, ","))  # Split into elements
+
+  # Convert to numeric
+  seq_numeric <- suppressWarnings(as.numeric(seq_split))  # Convert to numeric
+
+  # Remove NAs and keep only 21 and 22
+  seq_numeric <- seq_numeric[!is.na(seq_numeric)]
+
+  # Initialize variables for counting transitions
+  transitions <- 0
+  previous_value <- NA
+
+  # Loop through the sequence to count transitions between 21 and 22
+  for (value in seq_numeric) {
+    if (value %in% c(21, 22)) {
+      if (!is.na(previous_value) && previous_value != value) {
+        transitions <- transitions + 1
+      }
+      previous_value <- value
+    }
+  }
+
+  return(transitions)
+}
+
+# Apply the function to count transitions for each row
+aoi_data_solidity2 <- aoi_data_solidity2 %>%
+  mutate(transition_count = map_int(INTEREST_AREA_FIXATION_SEQUENCE, count_transitions))
+
+# View the updated data frame
+print(aoi_data_solidity2)
+
+```
+
+
+
+
+```{r}
+min(aoi_data_solidity2$dwell_time_allAoI)
+max(aoi_data_solidity2$dwell_time_allAoI)
+
+# Run the paired t-test
+t_test_result <- t.test(dwell_time_allAoI ~ condition,
+                        data = aoi_data_solidity2,
+                        paired = TRUE)
+
+# Extract the p-value
+p_value <- t_test_result$p.value
+
+# Calculate means for the conditions
+mean_test <- mean(aoi_data_solidity2$dwell_time_allAoI[aoi_data_solidity2$condition == "test"])
+mean_cont <- mean(aoi_data_solidity2$dwell_time_allAoI[aoi_data_solidity2$condition == "cont"])
+
+
+aoi_data_solidity2$condition2 <- jitter(as.numeric(as.factor(aoi_data_solidity2$condition), amount = .0001))
+
+library(gghalves)
+y_lim_min = 0
+y_lim_max = 10500
+
+solidity2_plot_dwell_end_IP_all_IA <- ggplot(data = aoi_data_solidity2, aes(x = condition, y = dwell_time_allAoI)) +
+  #Add geom_() objects
+  geom_point(
+    data = aoi_data_solidity2 %>% filter(condition == "test"),
+    aes(x = condition2),
+    color = 'darkorange',
+    size = 1.5,
+    alpha = .5
+  ) +
+  geom_point(
+    data = aoi_data_solidity2 %>% filter(condition == "cont"),
+    aes(x = condition2),
+    color = 'dodgerblue',
+    size = 1.5,
+    alpha = .5
+  ) +
+  geom_line(aes(x = condition2, group = subject),
+            color = 'lightgray',
+            alpha = .5) +
+  
+  geom_half_boxplot(
+    data = aoi_data_solidity2 %>% filter(condition == "test"),
+    aes(x = condition2, y = dwell_time_allAoI),
+    position = position_nudge(x = .25),
+    side = "r",
+    outlier.shape = NA,
+    center = TRUE,
+    errorbar.draw = TRUE,
+    width = .1,
+    fill = 'darkorange',
+    alpha = .5
+  ) +
+  geom_half_boxplot(
+    data = aoi_data_solidity2 %>% filter(condition == "cont"),
+    aes(x = condition2, y = dwell_time_allAoI),
+    position = position_nudge(x = -0.4),
+    side = "r",
+    outlier.shape = NA,
+    center = TRUE,
+    errorbar.draw = TRUE,
+    width = .1,
+    fill = 'dodgerblue',
+    alpha = .5
+  ) +
+
+  # Add p-value annotation
+  annotate(
+    "text",
+    x = 1.5,
+    y = y_lim_max - 200,
+    label = paste("p =", formatC(
+      p_value,  digits = 2
+    )),
+    size = 5,
+    color = "black"
+  ) +
+  
+  #Define additional settings
+  scale_x_continuous(
+    breaks = c(1, 2),
+    labels = c("Test", "Control"),
+    limits = c(0.4, 2.5)
+  ) +
+  xlab("Condition") + ylab("Dwell time (in ms)") +
+  #   ggtitle('Ball: end position') +
+  theme_classic() +
+  coord_cartesian(ylim = c(y_lim_min, y_lim_max))
+
+solidity2_plot_dwell_end_IP_all_IA
+
+ggsave(
+  solidity2_plot_dwell_end_IP_all_IA,
+  filename = "graphs/solidity2/solidity2_dwellTime.png",
+  height = 5,
+  width = 5,
+  scale = 0.8
+)
+```
+### Plotting transitions
+```{r}
+
+
+
+# Run the paired t-test
+t_test_result <- t.test(transition_count ~ condition,
+                        data = aoi_data_solidity2,
+                        paired = TRUE)
+
+# Extract the p-value
+p_value <- t_test_result$p.value
+
+# Calculate means for the conditions
+mean_test <- mean(aoi_data_solidity2$transition_count[aoi_data_solidity2$condition == "test"])
+mean_cont <- mean(aoi_data_solidity2$transition_count[aoi_data_solidity2$condition == "cont"])
+
+
+aoi_data_solidity2$condition2 <- jitter(as.numeric(as.factor(aoi_data_solidity2$condition), amount = .0001))
+
+library(gghalves)
+y_lim_min = 0
+y_lim_max = max(aoi_data_solidity2$transition_count)+3
+
+solidity2_plot_dwell_end_IP_IAtransitioncount <- ggplot(data = aoi_data_solidity2, aes(x = condition, y = transition_count)) +
+  #Add geom_() objects
+  geom_point(
+    data = aoi_data_solidity2 %>% filter(condition == "test"),
+    aes(x = condition2),
+    color = 'darkorange',
+    size = 1.5,
+    alpha = .5
+  ) +
+  geom_point(
+    data = aoi_data_solidity2 %>% filter(condition == "cont"),
+    aes(x = condition2),
+    color = 'dodgerblue',
+    size = 1.5,
+    alpha = .5
+  ) +
+  geom_line(aes(x = condition2, group = subject),
+            color = 'lightgray',
+            alpha = .5) +
+  
+  geom_half_boxplot(
+    data = aoi_data_solidity2 %>% filter(condition == "test"),
+    aes(x = condition2, y = transition_count),
+    position = position_nudge(x = .25),
+    side = "r",
+    outlier.shape = NA,
+    center = TRUE,
+    errorbar.draw = TRUE,
+    width = .1,
+    fill = 'darkorange',
+    alpha = .5
+  ) +
+  geom_half_boxplot(
+    data = aoi_data_solidity2 %>% filter(condition == "cont"),
+    aes(x = condition2, y = transition_count),
+    position = position_nudge(x = -0.4),
+    side = "r",
+    outlier.shape = NA,
+    center = TRUE,
+    errorbar.draw = TRUE,
+    width = .1,
+    fill = 'dodgerblue',
+    alpha = .5
+  ) +
+
+  # Add p-value annotation
+  annotate(
+    "text",
+    x = 1.5,
+    y = y_lim_max -1,
+    label = paste("p =", formatC(
+      p_value,  digits = 2
+    )),
+    size = 5,
+    color = "black"
+  ) +
+  
+  #Define additional settings
+  scale_x_continuous(
+    breaks = c(1, 2),
+    labels = c("Test", "Control"),
+    limits = c(0.4, 2.5)
+  ) +
+  xlab("Condition") + ylab("IA transition count") +
+  #   ggtitle('Ball: end position') +
+  theme_classic() +
+  coord_cartesian(ylim = c(y_lim_min, y_lim_max))
+
+solidity2_plot_dwell_end_IP_IAtransitioncount
+
+ggsave(
+  solidity2_plot_dwell_end_IP_IAtransitioncount,
+  filename = "graphs/solidity2/solidity2_IAtransitions.png",
+  height = 5,
+  width = 5,
+  scale = 0.8
+)
+```
+### Adding screenshots
+
+```{r}
+# Load necessary libraries
+library(ggplot2)
+library(cowplot)
+library(dplyr)
+library(png)
+library(grid)  # For rasterGrob
+library(ggforce)  # For drawing ellipses
+
+# Function to read EyeLink interest area file
+read_eyelink_ia <- function(file_path) {
+  lines <- readLines(file_path)
+  
+  # Filter out the header lines
+  ia_lines <- lines[!grepl("^#", lines)]
+  
+  # Extract shapes (RECTANGLE or ELLIPSE)
+  ia_data <- do.call(rbind, strsplit(ia_lines, "\t"))
+  ia_df <- as.data.frame(ia_data, stringsAsFactors = FALSE)
+  
+  # Name the columns
+  colnames(ia_df) <- c("Type", "ID", "X1", "Y1", "X2", "Y2", "Name")
+  
+  # Convert numeric columns
+  ia_df <- ia_df %>%
+    mutate(across(c(ID, X1, Y1, X2, Y2), as.numeric))
+  
+  return(ia_df)
+}
+
+# Read the interest area file
+ia_file <- "data/InterestAreas/IA_solidity_ver2.ias"
+interest_areas <- read_eyelink_ia(ia_file)
+
+# Load your image and get dimensions
+image_path <- "screenshots/solidity_ver2_control.png"  # Updated image path
+image_data <- readPNG(image_path)  # Load PNG image
+image_height <- dim(image_data)[1]  # Get the height of the image
+image_width <- dim(image_data)[2]   # Get the width of the image
+
+# Adjust the y-coordinates from EyeLink format to R format
+interest_areas <- interest_areas %>%
+  mutate(Y1 = image_height - Y1,  # Convert Y1
+         Y2 = image_height - Y2)  # Convert Y2
+
+```
+
+```{r}
+library(cowplot)
+solidity_ver2_control_photo <- "screenshots/solidity_ver2_control.png"
+solidity_ver2_control2_photo <- "screenshots/solidity_ver2_control2.png"
+solidity_ver2_test_photo <- "screenshots/solidity_ver2_test.png"
+solidity_ver2_test2_photo <- "screenshots/solidity_ver2_test2.png"
+
+
+solidity_ver2_control_photo_gg <- ggdraw(theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))) + draw_image(solidity_ver2_control_photo)
+solidity_ver2_test_photo_gg <- ggdraw(theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))) + draw_image(solidity_ver2_test_photo)
+solidity_ver2_control2_photo_gg <- readPNG(solidity_ver2_control2_photo)
+solidity_ver2_test2_photo_gg <- readPNG(solidity_ver2_test2_photo)
+
+# Create the base ggplot with the image as the background
+solidity_ver2_control2_photo_gg<- ggplot() +
+  # Add the image directly into the ggplot using annotation_custom
+  annotation_custom(
+    rasterGrob(solidity_ver2_control2_photo_gg, width = unit(1, "npc"), height = unit(1, "npc")),
+    xmin = 0, xmax = image_width, ymin = 0, ymax = image_height
+  ) +
+  # Add rectangles for "RECTANGLE" type interest areas
+  geom_rect(data = interest_areas %>% filter(Type == "RECTANGLE"),
+            aes(xmin = X1, xmax = X2, ymin = Y1, ymax = Y2),
+            color = "white", alpha = 0) +
+  # Add ellipses for "ELLIPSE" type interest areas
+  geom_ellipse(data = interest_areas %>% filter(Type == "ELLIPSE"),
+               aes(x0 = (X1 + X2) / 2,  # Center x
+                   y0 = (Y1 + Y2) / 2,  # Center y
+                   a = abs(X2 - X1) / 2,  # Radius along x-axis
+                   b = abs(Y2 - Y1) / 2,  # Radius along y-axis
+                   angle = 0),  # Angle is 0 (aligned with axes)
+               color = "white", alpha = 0) +
+  theme_void() +
+  coord_fixed() + # Keep aspect ratio
+  ylim(0, 1080) + xlim(0, 1920)+
+  theme(
+    plot.margin = unit(c(-0.35, -0.35, -0.35, -0.35), "cm"),  # Set negative margins to remove excess space
+    panel.spacing = unit(0, "lines"),  # Remove panel spacing
+    plot.background = element_rect(fill = "transparent", color = NA),  # Ensure background is transparent
+    panel.background = element_rect(fill = "transparent", color = NA)  # Ensure panel background is transparent
+  )
+
+# Create the base ggplot with the image as the background
+solidity_ver2_test2_photo_gg<- ggplot() +
+  # Add the image directly into the ggplot using annotation_custom
+  annotation_custom(
+    rasterGrob(solidity_ver2_test2_photo_gg, width = unit(1, "npc"), height = unit(1, "npc")),
+    xmin = 0, xmax = image_width, ymin = 0, ymax = image_height
+  ) +
+  # Add rectangles for "RECTANGLE" type interest areas
+  geom_rect(data = interest_areas %>% filter(Type == "RECTANGLE"),
+            aes(xmin = X1, xmax = X2, ymin = Y1, ymax = Y2),
+            color = "white", alpha = 0) +
+  # Add ellipses for "ELLIPSE" type interest areas
+  geom_ellipse(data = interest_areas %>% filter(Type == "ELLIPSE"),
+               aes(x0 = (X1 + X2) / 2,  # Center x
+                   y0 = (Y1 + Y2) / 2,  # Center y
+                   a = abs(X2 - X1) / 2,  # Radius along x-axis
+                   b = abs(Y2 - Y1) / 2,  # Radius along y-axis
+                   angle = 0),  # Angle is 0 (aligned with axes)
+               color = "white", alpha = 0) +
+  theme_void() +
+  coord_fixed() + # Keep aspect ratio
+  ylim(0, 1080) + xlim(0, 1920)+
+  theme(
+    plot.margin = unit(c(-0.35, -0.35, -0.35, -0.35), "cm"),  # Set negative margins to remove excess space
+    panel.spacing = unit(0, "lines"),  # Remove panel spacing
+    plot.background = element_rect(fill = "transparent", color = NA),  # Ensure background is transparent
+    panel.background = element_rect(fill = "transparent", color = NA)  # Ensure panel background is transparent
+  )
+
+
+
+solidity2_pics <- plot_grid(
+  solidity_ver2_control_photo_gg,
+  solidity_ver2_control2_photo_gg,
+  solidity_ver2_test_photo_gg,
+  solidity_ver2_test2_photo_gg,
+  nrow = 1,
+  labels = c("A - Control", "", "B - Test", ""),
+  label_colour = "white"
+)
+```
+
+
+
+
+```{r}
+library(cowplot)
+pg1<-plot_grid(agg_data_plot, plot_diff_gamm01,solidity2_plot_dwell_end_IP_all_IA, solidity2_plot_dwell_end_IP_IAtransitioncount, rel_widths = c(2,1,1,1),labels=c("C", "D", "E", "F"), nrow = 1)
+
+pg2<-plot_grid(solidity2_pics,pg1, ncol=1)
+
+ggsave(pg2, filename = "graphs/solidity2/solidity2_pupil_data.png", width = 16, height=8, scale=0.8)
+
+```
+
