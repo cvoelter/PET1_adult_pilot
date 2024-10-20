@@ -379,7 +379,7 @@ continuity1_plot_dwell_end_IP_all_IA <- ggplot(data = aoi_data_continuity1, aes(
   #Define additional settings
   scale_x_continuous(
     breaks = c(1, 2),
-    labels = c("Test", "Control"),
+    labels = c("Control", "Test"),
     limits = c(0.4, 2.5)
   ) +
   xlab("Condition") + ylab("Dwell time (in ms)") +
@@ -525,7 +525,7 @@ continuity1_plot_dwell_end_IP_IAtransitioncount <- ggplot(data = aoi_data_contin
   #Define additional settings
   scale_x_continuous(
     breaks = c(1, 2),
-    labels = c("Test", "Control"),
+    labels = c("Control", "Test"),
     limits = c(0.4, 2.5)
   ) +
   xlab("Condition") + ylab("IA transition count") +
