@@ -1,0 +1,14 @@
+video_file,experiment,version,condition,duration,audio_file,IA_apple_end_height,IA_apple_end_width,IA_apple_end_center_X,IA_apple_end_center_Y,IP_test_event_start
+attentioncheck.mp4,attention_check,,,24100,attentioncheckX.wav,,,,,
+continuity_ver1_n_cont.mp4,continuity,ver1,cont,30898,continuity_ver1_n_contX.wav,190,200,1448,913,14900
+continuity_ver1_n_test.mp4,continuity,ver1,test,30898,continuity_ver1_n_testX.wav,190,200,526,913,14900
+continuity_ver2_n_cont.mp4,continuity,ver2,cont,33868,continuity_ver2_n_contX.wav,140,170,1674,679,11700
+continuity_ver2_n_test.mp4,continuity,ver2,test,33868,continuity_ver2_n_testX.wav,140,170,1674,679,11700
+gravity_ver1_n_cont.mp4,gravity,ver1,cont,30164,gravity_ver1_n_contX.wav,150,160,689,549,12200
+gravity_ver1_n_test.mp4,gravity,ver1,test,30164,gravity_ver1_n_testX.wav,150,160,1079,549,12200
+gravity_ver2_n_cont.mp4,gravity,ver2,cont,29830,gravity_ver2_n_contX.wav,160,180,1692,546,12100
+gravity_ver2_n_test.mp4,gravity,ver2,test,29830,gravity_ver2_n_testX.wav,160,180,1692,546,12100
+solidity_ver1_n_cont.mp4,solidity,ver1,cont,38539,solidity_ver1_n_contX.wav,130,160,1218,668,22500
+solidity_ver1_n_test.mp4,solidity,ver1,test,38539,solidity_ver1_n_testX.wav,130,160,1657,668,22500
+solidity_ver2_n_cont.mp4,solidity,ver2,cont,34869,solidity_ver2_n_contX.wav,140,160,1714,679,16600
+solidity_ver2_n_test.mp4,solidity,ver2,test,34869,solidity_ver2_n_testX.wav,140,160,1714,679,16600
