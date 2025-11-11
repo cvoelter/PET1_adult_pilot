@@ -28,7 +28,7 @@ col1 <- 'pink1'
 col2 <- 'black'
 col3 <- 'indianred'
 
-load("workspaces/solidity1_workspace.RData")
+#load("workspaces/solidity1_workspace.RData")
 
 ```
 
@@ -553,6 +553,223 @@ ggsave(
   scale = 0.8
 )
 ```
+
+
+### Plotting x gaze coordinates
+```{r}
+library(jsonlite)
+library(dplyr)
+(12000/1000)*29.97002997002997
+
+# Read raw text
+raw_txt <- readLines("data/sam2_aoi/solidity_ver1_n_cont_sam2.json")
+# Replace NaN with null
+raw_txt <- gsub(": NaN", ": null", raw_txt)
+# Parse
+sam2_cont <- fromJSON(paste(raw_txt, collapse = "\n"))
+
+
+# Unnest bounding_box and center_of_mass into flat columns
+sam2_cont <- sam2_cont %>%
+  unnest_wider(bounding_box) %>%     # creates x_min, y_min, x_max, y_max
+  unnest_wider(center_of_mass)       # creates x, y
+
+# Now filter apples and compute time
+sam2_cont_apple <- sam2_cont %>%
+  filter(object_label == "apple") %>%
+  mutate(time_ms = frame_idx * (1000 / 29.97002997002997),
+  condition = "cont") %>%
+  select(condition, object_label, time_ms, xmin = x_min, xmax = x_max)
+
+sam2_cont_wall <- sam2_cont %>%
+  filter(object_label == "wall_left") %>%
+  mutate(time_ms = frame_idx * (1000 / 29.97002997002997),
+  condition = "cont") %>%
+  select(condition, object_label, time_ms, xmin = x_min, xmax = x_max)
+
+# Read raw text
+raw_txt <- readLines("data/sam2_aoi/solidity_ver1_n_test_sam2.json")
+# Replace NaN with null
+raw_txt <- gsub(": NaN", ": null", raw_txt)
+# Parse
+sam2_test <- fromJSON(paste(raw_txt, collapse = "\n"))
+
+# Unnest bounding_box and center_of_mass into flat columns
+sam2_test <- sam2_test %>%
+  unnest_wider(bounding_box) %>%     # creates x_min, y_min, x_max, y_max
+  unnest_wider(center_of_mass)       # creates x, y
+
+# Now filter apples and compute time
+sam2_test_apple <- sam2_test %>%
+  filter(object_label == "apple") %>%
+  mutate(time_ms = frame_idx * (1000 / 29.97002997002997),
+  condition = "test") %>%
+  select(condition, object_label, time_ms, xmin = x_min, xmax = x_max)
+
+sam2_test_wall <- sam2_test %>%
+  filter(object_label == "wall_left") %>%
+  mutate(time_ms = frame_idx * (1000 / 29.97002997002997),
+  condition = "test") %>%
+  select(condition, object_label, time_ms, xmin = x_min, xmax = x_max)
+
+```
+
+
+
+```{r}
+dat$condition <- relevel(as.factor(dat$condition), "cont", "test")
+
+dat.agg <- dat %>%
+  filter(Xgaze > 0 & Xgaze < 1920) %>%
+  group_by(condition, time) %>%
+  summarise(
+    median_y = median(Ygaze, na.rm = TRUE),
+    median_x = median(Xgaze, na.rm = TRUE),
+    mean_y = mean(Ygaze, na.rm = TRUE),
+    mean_x = mean(Xgaze, na.rm = TRUE),
+    se_y = sd(Ygaze, na.rm = TRUE) / sqrt(length(Ygaze)),
+    se_x = sd(Xgaze, na.rm = TRUE) / sqrt(length(Xgaze))
+  )
+
+con.labs <- c("Control", "Test")
+names(con.labs) <- c(levels(as.factor(dat$condition)))
+```
+
+```{r}
+# Add a label column for the apple data so it can map into the legend
+sam2_cont_apple <- sam2_cont_apple %>% mutate(legend_label = "Apple")
+sam2_cont_wall <- sam2_cont_wall %>% mutate(legend_label = "Obstacle")
+
+gaze_x_plot <- ggplot(
+  data = dat.agg,# %>% filter(time < 14000),
+  aes(x = time, y = mean_x)
+) +
+  facet_wrap(~condition, labeller = labeller(condition = con.labs)) +
+
+  # Apple ribbon overlay, with mapped color & fill
+  geom_ribbon(
+    data = sam2_cont_apple %>% filter(time_ms < max(dat.agg$time, na.rm=TRUE) & time_ms > min(dat.agg$time, na.rm=TRUE)),
+    aes(
+      x = time_ms,
+      ymin = xmin,
+      ymax = xmax,
+      fill = "Apple",
+      group = condition
+      ),
+    inherit.aes = FALSE,
+    alpha = 0.6
+  ) +
+    geom_ribbon(
+    data = sam2_test_apple %>% filter(time_ms < max(dat.agg$time, na.rm=TRUE) & time_ms > min(dat.agg$time, na.rm=TRUE)),
+    aes(
+      x = time_ms,
+      ymin = xmin,
+      ymax = xmax,
+      fill = "Apple",
+      group = condition
+      ),
+    inherit.aes = FALSE,
+    alpha = 0.6
+  ) +
+# Obstacle ribbon overlay, with mapped color & fill
+  geom_ribbon(
+    data = sam2_cont_wall %>% filter(time_ms < max(dat.agg$time, na.rm=TRUE) & time_ms > min(dat.agg$time, na.rm=TRUE)),
+    aes(
+      x = time_ms,
+      ymin = xmin,
+      ymax = xmax,
+      fill = "Obstacle",
+      group = condition
+      ),
+    inherit.aes = FALSE,
+    alpha = 0.6
+  ) +
+    geom_ribbon(
+    data = sam2_test_wall %>% filter(time_ms < max(dat.agg$time, na.rm=TRUE) & time_ms > min(dat.agg$time, na.rm=TRUE)),
+    aes(
+      x = time_ms,
+      ymin = xmin,
+      ymax = xmax,
+      fill = "Obstacle",
+      group = condition
+      ),
+    inherit.aes = FALSE,
+    alpha = 0.6
+  ) +
+
+  # Raw gaze path
+  geom_path(
+    data = dat,# %>% filter(time < 14000),
+    aes(x = time, y = Xgaze, group = RECORDING_SESSION_LABEL),
+    size = 0.4,
+    alpha = 0.1
+  ) +
+
+  # Median path
+  geom_path(aes(y = median_x, color = "Median"), size = 1, alpha=0.8) +
+
+  # Mean ± SE ribbon
+  geom_ribbon(
+    aes(ymin = mean_x - se_x, ymax = mean_x + se_x, fill = "Mean ± SE"),
+    alpha = 0.5
+  ) +
+
+  # Mean ± SE points
+  geom_point(alpha = 0.9, size = 0.6, color = "#2596be") +
+
+  ylab("Horizontal coordinates (in px)") +
+  xlab("Time (in ms)") +
+  ylim(1920, 0) +
+  theme_bw() +
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor.x = element_blank(),
+    panel.grid.major.y = element_blank(),
+    panel.grid.minor.y = element_blank(),
+    strip.text.x = element_text(size = 10),
+    legend.position = c(0.9, 0.85),
+    legend.title = element_blank(),
+    legend.key = element_blank(),
+    legend.background = element_rect(fill = "transparent"),
+    # Reduce space between keys
+    legend.spacing.y = unit(0.1, "cm"), # vertical spacing between legend items
+    legend.spacing.x = unit(0.1, "cm"), # horizontal spacing between legend items
+    
+    # Reduce padding inside legend box
+    legend.margin = margin(2, 2, 2, 2), # all sides in points
+    
+    # Make legend symbols smaller
+    legend.key.size = unit(0.4, "cm"),
+    
+    # Slightly smaller text for compactness
+    legend.text = element_text(size = 8)
+  ) +
+
+  # Matching scales for both color and fill
+  scale_color_manual(
+    values = c(
+      "Median" = "black"
+    ),
+    breaks = c("Median")
+  ) +
+  scale_fill_manual(
+    values = c("Apple" = "#e88749", "Obstacle" = "#633519", "Mean ± SE" = "#2596be"),
+    breaks = c("Apple", "Obstacle", "Mean ± SE")
+  ) 
+
+gaze_x_plot
+
+ggsave(
+  gaze_x_plot,
+  filename = "graphs/solidity1/solidity_ver1_x-gaze.png",
+  height = 5,
+  width = 10,
+  scale = 0.8
+)
+```
+
+
+
 
 ### Adding screenshots
 

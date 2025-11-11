@@ -151,7 +151,9 @@ eye_data <- eye_data %>%
 ```
 
 ```{r}
+
 unique(eye_data$subject)
+unique(eye_data$video_file)
 length(unique(eye_data$subject))
 
 ```
@@ -177,7 +179,9 @@ sample_data <- eye_data %>%
     starts_with("AOI_hit_"),
     starts_with("Gaze_point_"),
     starts_with("Pupil_diameter"),
-    all_of(video.data_variable_names)
+    all_of(video.data_variable_names),
+    Validity_left,
+    Validity_right
   )
 ```
 # Define interest periods
@@ -190,6 +194,13 @@ sample_data <- sample_data %>%
     time_frame = (Recording_timestamp - min(Recording_timestamp, na.rm=TRUE))/1000
   ) %>%
   ungroup
+
+sample_data_example <- sample_data %>%
+  filter(subject == "Asega", video_file == "gravity_ver2_n_test", RECORDING_SESSION_LABEL =="Recording191")
+
+library(arrow)
+write_csv(sample_data_example, "data/chimp_example_data.csv")
+
 ```
 
 * create IPs

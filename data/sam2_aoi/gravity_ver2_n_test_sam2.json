@@ -1,0 +1,4082 @@
+[
+    {
+        "frame_idx": 359,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000359/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 700,
+            "y_min": 466,
+            "x_max": 868,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 782.973115367571,
+            "y": 541.9996553252253
+        }
+    },
+    {
+        "frame_idx": 359,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000359/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1635,
+            "y_min": 9,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.5381499431187,
+            "y": 349.7429950483656
+        }
+    },
+    {
+        "frame_idx": 360,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000360/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 728,
+            "y_min": 464,
+            "x_max": 892,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 809.1468182724915,
+            "y": 541.162377817674
+        }
+    },
+    {
+        "frame_idx": 360,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000360/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.6666115604107,
+            "y": 349.1522585850036
+        }
+    },
+    {
+        "frame_idx": 361,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000361/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 751,
+            "y_min": 464,
+            "x_max": 915,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 832.8095758961865,
+            "y": 542.4342465072341
+        }
+    },
+    {
+        "frame_idx": 361,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000361/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.5228481464821,
+            "y": 349.2065263408568
+        }
+    },
+    {
+        "frame_idx": 362,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000362/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 774,
+            "y_min": 464,
+            "x_max": 935,
+            "y_max": 615
+        },
+        "center_of_mass": {
+            "x": 856.2694907616043,
+            "y": 540.0650943868609
+        }
+    },
+    {
+        "frame_idx": 362,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000362/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.5303704781622,
+            "y": 349.1996586917841
+        }
+    },
+    {
+        "frame_idx": 363,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000363/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 799,
+            "y_min": 463,
+            "x_max": 959,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 880.4472925830427,
+            "y": 539.6510945952779
+        }
+    },
+    {
+        "frame_idx": 363,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000363/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.52886428132,
+            "y": 349.15889080722087
+        }
+    },
+    {
+        "frame_idx": 364,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000364/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 824,
+            "y_min": 464,
+            "x_max": 984,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 903.5650864928306,
+            "y": 539.5273256110629
+        }
+    },
+    {
+        "frame_idx": 364,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000364/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1787.518341824919,
+            "y": 349.14691325349037
+        }
+    },
+    {
+        "frame_idx": 365,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000365/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 848,
+            "y_min": 464,
+            "x_max": 1008,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 926.7208966015908,
+            "y": 539.7037496126434
+        }
+    },
+    {
+        "frame_idx": 365,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000365/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.6944499412937,
+            "y": 349.5016820358571
+        }
+    },
+    {
+        "frame_idx": 366,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000366/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 870,
+            "y_min": 465,
+            "x_max": 1031,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 949.1235513350691,
+            "y": 542.2422014601522
+        }
+    },
+    {
+        "frame_idx": 366,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000366/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.6895857933519,
+            "y": 349.5093574156777
+        }
+    },
+    {
+        "frame_idx": 367,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000367/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 892,
+            "y_min": 468,
+            "x_max": 1053,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 972.4221492353485,
+            "y": 544.2902596736118
+        }
+    },
+    {
+        "frame_idx": 367,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000367/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.6991635552858,
+            "y": 349.5166893148805
+        }
+    },
+    {
+        "frame_idx": 368,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000368/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 914,
+            "y_min": 469,
+            "x_max": 1075,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 995.5139189607175,
+            "y": 545.0658830807299
+        }
+    },
+    {
+        "frame_idx": 368,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000368/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.5192590239446,
+            "y": 349.1111464082913
+        }
+    },
+    {
+        "frame_idx": 369,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000369/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 935,
+            "y_min": 469,
+            "x_max": 1099,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1018.0558123000355,
+            "y": 544.2454928647605
+        }
+    },
+    {
+        "frame_idx": 369,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000369/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.690104991031,
+            "y": 349.53334388519573
+        }
+    },
+    {
+        "frame_idx": 370,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000370/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 955,
+            "y_min": 467,
+            "x_max": 1120,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1039.3126925602303,
+            "y": 541.8732764281025
+        }
+    },
+    {
+        "frame_idx": 370,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000370/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.500956187426,
+            "y": 349.1354080505026
+        }
+    },
+    {
+        "frame_idx": 371,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000371/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 978,
+            "y_min": 467,
+            "x_max": 1142,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1059.3349901100573,
+            "y": 542.3876350357559
+        }
+    },
+    {
+        "frame_idx": 371,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000371/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.6883774605164,
+            "y": 349.54907184542844
+        }
+    },
+    {
+        "frame_idx": 372,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000372/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 467,
+            "x_max": 1161,
+            "y_max": 615
+        },
+        "center_of_mass": {
+            "x": 1079.7760788136898,
+            "y": 542.4182872389553
+        }
+    },
+    {
+        "frame_idx": 372,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000372/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.4884588914183,
+            "y": 349.1790129175711
+        }
+    },
+    {
+        "frame_idx": 373,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000373/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1022,
+            "y_min": 467,
+            "x_max": 1181,
+            "y_max": 615
+        },
+        "center_of_mass": {
+            "x": 1100.422423962661,
+            "y": 542.9440939631738
+        }
+    },
+    {
+        "frame_idx": 373,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000373/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.4845652864556,
+            "y": 349.17896192947154
+        }
+    },
+    {
+        "frame_idx": 374,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000374/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1042,
+            "y_min": 464,
+            "x_max": 1201,
+            "y_max": 615
+        },
+        "center_of_mass": {
+            "x": 1120.566397051295,
+            "y": 541.741578785707
+        }
+    },
+    {
+        "frame_idx": 374,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000374/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1787.4870098915505,
+            "y": 349.11035633416753
+        }
+    },
+    {
+        "frame_idx": 375,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000375/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1060,
+            "y_min": 463,
+            "x_max": 1221,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1141.0585280080381,
+            "y": 542.4153227832203
+        }
+    },
+    {
+        "frame_idx": 375,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000375/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1787.479653318502,
+            "y": 349.09429789713437
+        }
+    },
+    {
+        "frame_idx": 376,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000376/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1079,
+            "y_min": 463,
+            "x_max": 1240,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1160.9698888279574,
+            "y": 542.1652126227629
+        }
+    },
+    {
+        "frame_idx": 376,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000376/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.669133799054,
+            "y": 349.46357681423285
+        }
+    },
+    {
+        "frame_idx": 377,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000377/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1098,
+            "y_min": 463,
+            "x_max": 1259,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1180.001879606272,
+            "y": 542.2662116040956
+        }
+    },
+    {
+        "frame_idx": 377,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000377/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.686557614933,
+            "y": 349.46448783061805
+        }
+    },
+    {
+        "frame_idx": 378,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000378/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1118,
+            "y_min": 467,
+            "x_max": 1282,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1200.4641584158417,
+            "y": 542.5049504950495
+        }
+    },
+    {
+        "frame_idx": 378,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000378/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1787.4928877940242,
+            "y": 349.0350047679593
+        }
+    },
+    {
+        "frame_idx": 379,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000379/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1137,
+            "y_min": 467,
+            "x_max": 1304,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1219.2545906942025,
+            "y": 541.7226175665588
+        }
+    },
+    {
+        "frame_idx": 379,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000379/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.676706456506,
+            "y": 349.4949152542373
+        }
+    },
+    {
+        "frame_idx": 380,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000380/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1157,
+            "y_min": 466,
+            "x_max": 1325,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1240.3062778052397,
+            "y": 541.9542758279782
+        }
+    },
+    {
+        "frame_idx": 380,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000380/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.498444347354,
+            "y": 349.1178390329798
+        }
+    },
+    {
+        "frame_idx": 381,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000381/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1178,
+            "y_min": 467,
+            "x_max": 1345,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1260.6544703452346,
+            "y": 544.5900462279925
+        }
+    },
+    {
+        "frame_idx": 381,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000381/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.6750720223615,
+            "y": 349.53427077770965
+        }
+    },
+    {
+        "frame_idx": 382,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000382/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1198,
+            "y_min": 465,
+            "x_max": 1366,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1281.259473811248,
+            "y": 544.4162684045377
+        }
+    },
+    {
+        "frame_idx": 382,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000382/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.5014003005847,
+            "y": 349.08805672707047
+        }
+    },
+    {
+        "frame_idx": 383,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000383/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1214,
+            "y_min": 463,
+            "x_max": 1384,
+            "y_max": 619
+        },
+        "center_of_mass": {
+            "x": 1300.1151092779596,
+            "y": 543.5893898449723
+        }
+    },
+    {
+        "frame_idx": 383,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000383/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.7001127767483,
+            "y": 349.4531844592322
+        }
+    },
+    {
+        "frame_idx": 384,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000384/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1235,
+            "y_min": 465,
+            "x_max": 1400,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1318.8474527487288,
+            "y": 543.5019668041831
+        }
+    },
+    {
+        "frame_idx": 384,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000384/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.7009692733748,
+            "y": 349.477522088883
+        }
+    },
+    {
+        "frame_idx": 385,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000385/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1252,
+            "y_min": 462,
+            "x_max": 1416,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1335.8821917808218,
+            "y": 541.1728430665705
+        }
+    },
+    {
+        "frame_idx": 385,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000385/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.5210308213736,
+            "y": 349.17495895779274
+        }
+    },
+    {
+        "frame_idx": 386,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000386/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1268,
+            "y_min": 460,
+            "x_max": 1432,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1350.6750649100875,
+            "y": 539.6725165881335
+        }
+    },
+    {
+        "frame_idx": 386,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000386/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 636
+        },
+        "center_of_mass": {
+            "x": 1787.718390084715,
+            "y": 349.51732208194613
+        }
+    },
+    {
+        "frame_idx": 387,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000387/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1284,
+            "y_min": 461,
+            "x_max": 1449,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1366.6638253040896,
+            "y": 539.6754142323532
+        }
+    },
+    {
+        "frame_idx": 387,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000387/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 636
+        },
+        "center_of_mass": {
+            "x": 1787.7128205128206,
+            "y": 349.59450926109025
+        }
+    },
+    {
+        "frame_idx": 388,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000388/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1299,
+            "y_min": 461,
+            "x_max": 1467,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1382.188956649175,
+            "y": 540.462913061977
+        }
+    },
+    {
+        "frame_idx": 388,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000388/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 636
+        },
+        "center_of_mass": {
+            "x": 1787.6924861587133,
+            "y": 349.60720406011075
+        }
+    },
+    {
+        "frame_idx": 389,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000389/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1314,
+            "y_min": 461,
+            "x_max": 1482,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1397.3993584603047,
+            "y": 540.612151516581
+        }
+    },
+    {
+        "frame_idx": 389,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000389/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.5078537495533,
+            "y": 349.28092207121966
+        }
+    },
+    {
+        "frame_idx": 390,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000390/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1328,
+            "y_min": 462,
+            "x_max": 1496,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1410.7687243583628,
+            "y": 540.9930350157427
+        }
+    },
+    {
+        "frame_idx": 390,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000390/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.483804998147,
+            "y": 349.1665828347541
+        }
+    },
+    {
+        "frame_idx": 391,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000391/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1342,
+            "y_min": 463,
+            "x_max": 1511,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1425.8633390216155,
+            "y": 541.630451270383
+        }
+    },
+    {
+        "frame_idx": 391,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000391/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.5674356141546,
+            "y": 349.020554515444
+        }
+    },
+    {
+        "frame_idx": 392,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000392/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1358,
+            "y_min": 465,
+            "x_max": 1530,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1442.8643131379342,
+            "y": 543.8564940537503
+        }
+    },
+    {
+        "frame_idx": 392,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000392/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.5793934902433,
+            "y": 349.0017071734369
+        }
+    },
+    {
+        "frame_idx": 393,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000393/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1372,
+            "y_min": 467,
+            "x_max": 1548,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1460.4724800445517,
+            "y": 545.6570447373306
+        }
+    },
+    {
+        "frame_idx": 393,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000393/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.6635408480654,
+            "y": 349.2528677184386
+        }
+    },
+    {
+        "frame_idx": 394,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000394/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1387,
+            "y_min": 467,
+            "x_max": 1565,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1476.3112983566873,
+            "y": 544.6766444765142
+        }
+    },
+    {
+        "frame_idx": 394,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000394/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.5834679234292,
+            "y": 349.018586671609
+        }
+    },
+    {
+        "frame_idx": 395,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000395/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1402,
+            "y_min": 467,
+            "x_max": 1578,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1491.5484883993438,
+            "y": 543.5030700726505
+        }
+    },
+    {
+        "frame_idx": 395,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000395/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1635,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.4660904824282,
+            "y": 349.534975875302
+        }
+    },
+    {
+        "frame_idx": 396,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000396/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1417,
+            "y_min": 466,
+            "x_max": 1593,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1505.8681226375472,
+            "y": 543.1214242381819
+        }
+    },
+    {
+        "frame_idx": 396,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000396/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.6701016626703,
+            "y": 349.2616145802369
+        }
+    },
+    {
+        "frame_idx": 397,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000397/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1431,
+            "y_min": 467,
+            "x_max": 1606,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1519.0693166425335,
+            "y": 543.06852258396
+        }
+    },
+    {
+        "frame_idx": 397,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000397/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.7021400302604,
+            "y": 349.2421953975144
+        }
+    },
+    {
+        "frame_idx": 398,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000398/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1445,
+            "y_min": 467,
+            "x_max": 1618,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1531.3557503964182,
+            "y": 543.1236824923049
+        }
+    },
+    {
+        "frame_idx": 398,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000398/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.6925712927443,
+            "y": 349.29603903521223
+        }
+    },
+    {
+        "frame_idx": 399,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000399/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1458,
+            "y_min": 466,
+            "x_max": 1629,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1543.349930200093,
+            "y": 543.0881805490926
+        }
+    },
+    {
+        "frame_idx": 399,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000399/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.458614797743,
+            "y": 349.2177143765398
+        }
+    },
+    {
+        "frame_idx": 400,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000400/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1471,
+            "y_min": 466,
+            "x_max": 1643,
+            "y_max": 619
+        },
+        "center_of_mass": {
+            "x": 1555.671826481902,
+            "y": 543.4308291236039
+        }
+    },
+    {
+        "frame_idx": 400,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000400/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1787.6863709048619,
+            "y": 349.2287792887444
+        }
+    },
+    {
+        "frame_idx": 401,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000401/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1484,
+            "y_min": 465,
+            "x_max": 1653,
+            "y_max": 619
+        },
+        "center_of_mass": {
+            "x": 1567.422791544169,
+            "y": 543.7077791777498
+        }
+    },
+    {
+        "frame_idx": 401,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000401/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1787.9249397406356,
+            "y": 348.5403953545508
+        }
+    },
+    {
+        "frame_idx": 402,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000402/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1496,
+            "y_min": 464,
+            "x_max": 1662,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1578.5335878942158,
+            "y": 543.4684391646632
+        }
+    },
+    {
+        "frame_idx": 402,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000402/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1788.7499849958988,
+            "y": 347.4729292673331
+        }
+    },
+    {
+        "frame_idx": 403,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000403/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1508,
+            "y_min": 462,
+            "x_max": 1676,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1590.7126788403614,
+            "y": 542.8990963855422
+        }
+    },
+    {
+        "frame_idx": 403,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000403/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1789.9068863483524,
+            "y": 345.7735238735709
+        }
+    },
+    {
+        "frame_idx": 404,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000404/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1517,
+            "y_min": 461,
+            "x_max": 1686,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1601.8380895302198,
+            "y": 543.0774053755014
+        }
+    },
+    {
+        "frame_idx": 404,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000404/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 635
+        },
+        "center_of_mass": {
+            "x": 1791.2308769544527,
+            "y": 343.6899592114208
+        }
+    },
+    {
+        "frame_idx": 405,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000405/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1527,
+            "y_min": 460,
+            "x_max": 1697,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1613.126581698148,
+            "y": 542.2594443425637
+        }
+    },
+    {
+        "frame_idx": 405,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000405/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1792.6415734824282,
+            "y": 341.1642750908891
+        }
+    },
+    {
+        "frame_idx": 406,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000406/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1536,
+            "y_min": 461,
+            "x_max": 1706,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1622.9775068126185,
+            "y": 542.7929887764999
+        }
+    },
+    {
+        "frame_idx": 406,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000406/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1793.5934091146105,
+            "y": 339.1263948274064
+        }
+    },
+    {
+        "frame_idx": 407,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000407/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1543,
+            "y_min": 461,
+            "x_max": 1716,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1631.1274938507788,
+            "y": 543.1233032704746
+        }
+    },
+    {
+        "frame_idx": 407,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000407/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1794.475870833655,
+            "y": 337.0089593529044
+        }
+    },
+    {
+        "frame_idx": 408,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000408/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1552,
+            "y_min": 461,
+            "x_max": 1725,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1640.0451097263615,
+            "y": 543.3976338842228
+        }
+    },
+    {
+        "frame_idx": 408,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000408/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1795.2616316691435,
+            "y": 334.8515811105817
+        }
+    },
+    {
+        "frame_idx": 409,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000409/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1560,
+            "y_min": 463,
+            "x_max": 1735,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1649.0382607129995,
+            "y": 543.7243878285921
+        }
+    },
+    {
+        "frame_idx": 409,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000409/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1796.2331571663165,
+            "y": 332.718245118357
+        }
+    },
+    {
+        "frame_idx": 410,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000410/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1569,
+            "y_min": 465,
+            "x_max": 1743,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1657.3089655797924,
+            "y": 543.8898916148928
+        }
+    },
+    {
+        "frame_idx": 410,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000410/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1796.8289133785338,
+            "y": 330.8754694317615
+        }
+    },
+    {
+        "frame_idx": 411,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000411/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1577,
+            "y_min": 467,
+            "x_max": 1750,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1665.0081393233904,
+            "y": 544.1839759912696
+        }
+    },
+    {
+        "frame_idx": 411,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000411/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1797.176401775204,
+            "y": 328.82755368384113
+        }
+    },
+    {
+        "frame_idx": 412,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000412/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1585,
+            "y_min": 469,
+            "x_max": 1762,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1674.1536515965856,
+            "y": 544.3432997606251
+        }
+    },
+    {
+        "frame_idx": 412,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000412/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.1151848114512,
+            "y": 323.6686624060993
+        }
+    },
+    {
+        "frame_idx": 413,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000413/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1593,
+            "y_min": 470,
+            "x_max": 1770,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1681.3784026996625,
+            "y": 544.4745556805399
+        }
+    },
+    {
+        "frame_idx": 413,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000413/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1797.823837084036,
+            "y": 324.86431346909666
+        }
+    },
+    {
+        "frame_idx": 414,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000414/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1600,
+            "y_min": 469,
+            "x_max": 1777,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1688.850154965638,
+            "y": 544.5379778107173
+        }
+    },
+    {
+        "frame_idx": 414,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000414/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.0659860837523,
+            "y": 323.0410521821845
+        }
+    },
+    {
+        "frame_idx": 415,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000415/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1600,
+            "y_min": 469,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1687.9676787909136,
+            "y": 544.392725451814
+        }
+    },
+    {
+        "frame_idx": 415,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000415/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.7794836271091,
+            "y": 321.92751353427053
+        }
+    },
+    {
+        "frame_idx": 416,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000416/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1598,
+            "y_min": 468,
+            "x_max": 1776,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1686.9826118132114,
+            "y": 544.3317199964148
+        }
+    },
+    {
+        "frame_idx": 416,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000416/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1637,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.9806366844357,
+            "y": 321.9528493130115
+        }
+    },
+    {
+        "frame_idx": 417,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000417/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1598,
+            "y_min": 470,
+            "x_max": 1774,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1686.0872021504397,
+            "y": 544.4610688414051
+        }
+    },
+    {
+        "frame_idx": 417,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000417/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.625257182333,
+            "y": 322.60747593374083
+        }
+    },
+    {
+        "frame_idx": 418,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000418/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1597,
+            "y_min": 469,
+            "x_max": 1775,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1686.4648153991795,
+            "y": 544.4602172835054
+        }
+    },
+    {
+        "frame_idx": 418,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000418/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1635,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.1976833051115,
+            "y": 322.8102812701362
+        }
+    },
+    {
+        "frame_idx": 419,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000419/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1597,
+            "y_min": 469,
+            "x_max": 1775,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1686.3294681232092,
+            "y": 544.3353330945558
+        }
+    },
+    {
+        "frame_idx": 419,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000419/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1635,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.0756426480168,
+            "y": 322.7468869104224
+        }
+    },
+    {
+        "frame_idx": 420,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000420/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1598,
+            "y_min": 470,
+            "x_max": 1774,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1685.9377733236151,
+            "y": 544.5310677842566
+        }
+    },
+    {
+        "frame_idx": 420,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000420/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1635,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.1503390401979,
+            "y": 322.9240999512981
+        }
+    },
+    {
+        "frame_idx": 421,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000421/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1599,
+            "y_min": 470,
+            "x_max": 1775,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1686.7401916058395,
+            "y": 544.651140510949
+        }
+    },
+    {
+        "frame_idx": 421,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000421/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.5184820515904,
+            "y": 322.6732532619806
+        }
+    },
+    {
+        "frame_idx": 422,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000422/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1600,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1687.4839813800656,
+            "y": 544.7901606425703
+        }
+    },
+    {
+        "frame_idx": 422,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000422/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.6761076984383,
+            "y": 322.422282539229
+        }
+    },
+    {
+        "frame_idx": 423,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000423/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1777,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.5216476935034,
+            "y": 544.5950715493988
+        }
+    },
+    {
+        "frame_idx": 423,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000423/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.58517331166,
+            "y": 322.3254165349709
+        }
+    },
+    {
+        "frame_idx": 424,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000424/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1600,
+            "y_min": 470,
+            "x_max": 1777,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.1921193538053,
+            "y": 544.6110933138071
+        }
+    },
+    {
+        "frame_idx": 424,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000424/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.4540893842984,
+            "y": 322.46838004121724
+        }
+    },
+    {
+        "frame_idx": 425,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000425/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1600,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1687.5820751686476,
+            "y": 544.6460465329724
+        }
+    },
+    {
+        "frame_idx": 425,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000425/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.3881699582168,
+            "y": 322.6322105990922
+        }
+    },
+    {
+        "frame_idx": 426,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000426/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1600,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1687.525700398918,
+            "y": 544.7250676326287
+        }
+    },
+    {
+        "frame_idx": 426,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000426/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.4806052952054,
+            "y": 322.58208921564204
+        }
+    },
+    {
+        "frame_idx": 427,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000427/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1600,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1687.4767105685833,
+            "y": 544.7285576614198
+        }
+    },
+    {
+        "frame_idx": 427,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000427/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.558439118246,
+            "y": 322.60790812683666
+        }
+    },
+    {
+        "frame_idx": 428,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000428/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1600,
+            "y_min": 470,
+            "x_max": 1777,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1687.9146956362304,
+            "y": 544.5998349834983
+        }
+    },
+    {
+        "frame_idx": 428,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000428/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.534843664207,
+            "y": 322.49917638829345
+        }
+    },
+    {
+        "frame_idx": 429,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000429/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1777,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.265207817231,
+            "y": 544.606064776585
+        }
+    },
+    {
+        "frame_idx": 429,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000429/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 633
+        },
+        "center_of_mass": {
+            "x": 1798.4676467932704,
+            "y": 322.34045354681433
+        }
+    },
+    {
+        "frame_idx": 430,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000430/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1687.9928940568475,
+            "y": 544.6409653008491
+        }
+    },
+    {
+        "frame_idx": 430,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000430/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.5877216075337,
+            "y": 322.26881736605765
+        }
+    },
+    {
+        "frame_idx": 431,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000431/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.0308869629357,
+            "y": 544.5876359948368
+        }
+    },
+    {
+        "frame_idx": 431,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000431/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6303632846896,
+            "y": 322.1749290665382
+        }
+    },
+    {
+        "frame_idx": 432,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000432/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.005999077065,
+            "y": 544.5970927549607
+        }
+    },
+    {
+        "frame_idx": 432,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000432/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6167170600359,
+            "y": 322.328715194729
+        }
+    },
+    {
+        "frame_idx": 433,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000433/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1687.9710499584448,
+            "y": 544.6298365500046
+        }
+    },
+    {
+        "frame_idx": 433,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000433/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6044727280932,
+            "y": 322.2730650900037
+        }
+    },
+    {
+        "frame_idx": 434,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000434/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1687.9969987995198,
+            "y": 544.5898051528303
+        }
+    },
+    {
+        "frame_idx": 434,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000434/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.614849868715,
+            "y": 322.2375617866789
+        }
+    },
+    {
+        "frame_idx": 435,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000435/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.006045781798,
+            "y": 544.6000092302012
+        }
+    },
+    {
+        "frame_idx": 435,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000435/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.5970636706375,
+            "y": 322.3092176059359
+        }
+    },
+    {
+        "frame_idx": 436,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000436/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.0583241048357,
+            "y": 544.6575304540421
+        }
+    },
+    {
+        "frame_idx": 436,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000436/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.5916741945198,
+            "y": 322.20776121650107
+        }
+    },
+    {
+        "frame_idx": 437,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000437/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.0749181159754,
+            "y": 544.6371269087051
+        }
+    },
+    {
+        "frame_idx": 437,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000437/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6347996237064,
+            "y": 322.14992285983067
+        }
+    },
+    {
+        "frame_idx": 438,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000438/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.080682342093,
+            "y": 544.6358690640849
+        }
+    },
+    {
+        "frame_idx": 438,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000438/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6103775927054,
+            "y": 322.2277593457768
+        }
+    },
+    {
+        "frame_idx": 439,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000439/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.0595995940585,
+            "y": 544.6143555678568
+        }
+    },
+    {
+        "frame_idx": 439,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000439/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.609374294784,
+            "y": 322.2508688260693
+        }
+    },
+    {
+        "frame_idx": 440,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000440/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.0860517694828,
+            "y": 544.6207723896092
+        }
+    },
+    {
+        "frame_idx": 440,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000440/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.626718436082,
+            "y": 322.1614483396916
+        }
+    },
+    {
+        "frame_idx": 441,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000441/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.0699100760894,
+            "y": 544.645330873876
+        }
+    },
+    {
+        "frame_idx": 441,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000441/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.631774955611,
+            "y": 322.1882918535015
+        }
+    },
+    {
+        "frame_idx": 442,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000442/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.1475485448088,
+            "y": 544.6325815229925
+        }
+    },
+    {
+        "frame_idx": 442,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000442/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6162557091368,
+            "y": 322.1754388605052
+        }
+    },
+    {
+        "frame_idx": 443,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000443/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.1687952418276,
+            "y": 544.6333164276822
+        }
+    },
+    {
+        "frame_idx": 443,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000443/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.60196118273,
+            "y": 322.1912115533681
+        }
+    },
+    {
+        "frame_idx": 444,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000444/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.1272140221402,
+            "y": 544.5790590405904
+        }
+    },
+    {
+        "frame_idx": 444,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000444/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6342367314965,
+            "y": 321.86160532698597
+        }
+    },
+    {
+        "frame_idx": 445,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000445/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.14866921906,
+            "y": 544.585728123991
+        }
+    },
+    {
+        "frame_idx": 445,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000445/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6318698697191,
+            "y": 321.8834324873861
+        }
+    },
+    {
+        "frame_idx": 446,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000446/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.1646690023972,
+            "y": 544.5676286188457
+        }
+    },
+    {
+        "frame_idx": 446,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000446/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6351713545744,
+            "y": 321.94643287357707
+        }
+    },
+    {
+        "frame_idx": 447,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000447/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.148706598423,
+            "y": 544.5804398948679
+        }
+    },
+    {
+        "frame_idx": 447,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000447/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6272468611687,
+            "y": 321.98551771896547
+        }
+    },
+    {
+        "frame_idx": 448,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000448/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.1441092351693,
+            "y": 544.5714549312668
+        }
+    },
+    {
+        "frame_idx": 448,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000448/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6317148449261,
+            "y": 321.9662300511894
+        }
+    },
+    {
+        "frame_idx": 449,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000449/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.1602895076526,
+            "y": 544.58500829799
+        }
+    },
+    {
+        "frame_idx": 449,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000449/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6337609347004,
+            "y": 321.95838414863664
+        }
+    },
+    {
+        "frame_idx": 450,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000450/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.2117706701079,
+            "y": 544.5407871693244
+        }
+    },
+    {
+        "frame_idx": 450,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000450/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.657221833081,
+            "y": 321.8981027483411
+        }
+    },
+    {
+        "frame_idx": 451,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000451/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.2441699695823,
+            "y": 544.5520324453867
+        }
+    },
+    {
+        "frame_idx": 451,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000451/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6044343359792,
+            "y": 321.97660827521804
+        }
+    },
+    {
+        "frame_idx": 452,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000452/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.2143976403356,
+            "y": 544.5706977601623
+        }
+    },
+    {
+        "frame_idx": 452,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000452/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6221352205994,
+            "y": 321.96855142297846
+        }
+    },
+    {
+        "frame_idx": 453,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000453/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1602,
+            "y_min": 469,
+            "x_max": 1778,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1689.2605958301017,
+            "y": 544.5383457274511
+        }
+    },
+    {
+        "frame_idx": 453,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000453/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6262027737205,
+            "y": 321.9626104895421
+        }
+    },
+    {
+        "frame_idx": 454,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000454/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1602,
+            "y_min": 469,
+            "x_max": 1778,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1689.3360678151491,
+            "y": 544.5389207911768
+        }
+    },
+    {
+        "frame_idx": 454,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000454/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6247515509244,
+            "y": 321.9840239715714
+        }
+    },
+    {
+        "frame_idx": 455,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000455/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.357846295444,
+            "y": 544.5337321675104
+        }
+    },
+    {
+        "frame_idx": 455,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000455/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6154708857712,
+            "y": 322.02417655205636
+        }
+    },
+    {
+        "frame_idx": 456,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000456/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.332228208316,
+            "y": 544.5540820555325
+        }
+    },
+    {
+        "frame_idx": 456,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000456/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6160979758974,
+            "y": 322.0010914647457
+        }
+    },
+    {
+        "frame_idx": 457,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000457/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.36279112584,
+            "y": 544.5423916045291
+        }
+    },
+    {
+        "frame_idx": 457,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000457/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6180568624056,
+            "y": 322.02036929701086
+        }
+    },
+    {
+        "frame_idx": 458,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000458/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.381287680059,
+            "y": 544.5492199364904
+        }
+    },
+    {
+        "frame_idx": 458,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000458/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6134966092893,
+            "y": 322.0337791559727
+        }
+    },
+    {
+        "frame_idx": 459,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000459/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.4097538532321,
+            "y": 544.5475500345066
+        }
+    },
+    {
+        "frame_idx": 459,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000459/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.5879828649295,
+            "y": 322.05298621515203
+        }
+    },
+    {
+        "frame_idx": 460,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000460/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.338951052171,
+            "y": 544.5530690242667
+        }
+    },
+    {
+        "frame_idx": 460,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000460/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6195992533044,
+            "y": 322.02315358443985
+        }
+    },
+    {
+        "frame_idx": 461,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000461/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1602,
+            "y_min": 469,
+            "x_max": 1778,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1689.3441203281677,
+            "y": 544.5416590701915
+        }
+    },
+    {
+        "frame_idx": 461,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000461/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.612582233128,
+            "y": 322.0349406114983
+        }
+    },
+    {
+        "frame_idx": 462,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000462/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.3606534744592,
+            "y": 544.5381960423377
+        }
+    },
+    {
+        "frame_idx": 462,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000462/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6154454104098,
+            "y": 322.033344623838
+        }
+    },
+    {
+        "frame_idx": 463,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000463/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.3413589908848,
+            "y": 544.5453457324371
+        }
+    },
+    {
+        "frame_idx": 463,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000463/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6170838915566,
+            "y": 322.0544926314522
+        }
+    },
+    {
+        "frame_idx": 464,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000464/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.3168608667618,
+            "y": 544.5608621563119
+        }
+    },
+    {
+        "frame_idx": 464,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000464/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6210857521378,
+            "y": 322.02488558352405
+        }
+    },
+    {
+        "frame_idx": 465,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000465/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.339026748308,
+            "y": 544.5528290594356
+        }
+    },
+    {
+        "frame_idx": 465,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000465/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.5907971903725,
+            "y": 322.05278967695307
+        }
+    },
+    {
+        "frame_idx": 466,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000466/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.3318447585286,
+            "y": 544.5511716771788
+        }
+    },
+    {
+        "frame_idx": 466,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000466/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6132980084599,
+            "y": 322.03858138519666
+        }
+    },
+    {
+        "frame_idx": 467,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000467/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.3491690834599,
+            "y": 544.5455507986926
+        }
+    },
+    {
+        "frame_idx": 467,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000467/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6131702728128,
+            "y": 322.0745211665099
+        }
+    },
+    {
+        "frame_idx": 468,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000468/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.2681072613343,
+            "y": 544.5598967932178
+        }
+    },
+    {
+        "frame_idx": 468,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000468/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.623287568121,
+            "y": 322.0368756209918
+        }
+    },
+    {
+        "frame_idx": 469,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000469/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1602,
+            "y_min": 469,
+            "x_max": 1778,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1689.3087826443643,
+            "y": 544.5599562462969
+        }
+    },
+    {
+        "frame_idx": 469,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000469/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6231380076022,
+            "y": 322.05017500282264
+        }
+    },
+    {
+        "frame_idx": 470,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000470/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1602,
+            "y_min": 469,
+            "x_max": 1778,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1689.390759557115,
+            "y": 544.5643595935663
+        }
+    },
+    {
+        "frame_idx": 470,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000470/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.5944291790568,
+            "y": 322.0730455075846
+        }
+    },
+    {
+        "frame_idx": 471,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000471/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.394267047023,
+            "y": 544.5412717401307
+        }
+    },
+    {
+        "frame_idx": 471,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000471/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.617300860979,
+            "y": 322.0671247516407
+        }
+    },
+    {
+        "frame_idx": 472,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000472/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.387914768282,
+            "y": 544.5504625155322
+        }
+    },
+    {
+        "frame_idx": 472,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000472/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.622177565029,
+            "y": 322.0480115004817
+        }
+    },
+    {
+        "frame_idx": 473,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000473/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.3894615738611,
+            "y": 544.5489645651173
+        }
+    },
+    {
+        "frame_idx": 473,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000473/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6184254102063,
+            "y": 322.05033117567365
+        }
+    },
+    {
+        "frame_idx": 474,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000474/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.3988590881906,
+            "y": 544.5431292266642
+        }
+    },
+    {
+        "frame_idx": 474,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000474/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.5905012120027,
+            "y": 322.07113175446784
+        }
+    },
+    {
+        "frame_idx": 475,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000475/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.4148035697856,
+            "y": 544.5449443371056
+        }
+    },
+    {
+        "frame_idx": 475,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000475/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6144536600787,
+            "y": 322.06217542486417
+        }
+    },
+    {
+        "frame_idx": 476,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000476/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.3500460405157,
+            "y": 544.5505524861878
+        }
+    },
+    {
+        "frame_idx": 476,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000476/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6151524502684,
+            "y": 322.04612269781654
+        }
+    },
+    {
+        "frame_idx": 477,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000477/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1602,
+            "y_min": 469,
+            "x_max": 1778,
+            "y_max": 621
+        },
+        "center_of_mass": {
+            "x": 1689.3323005422153,
+            "y": 544.5602588053036
+        }
+    },
+    {
+        "frame_idx": 477,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000477/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.5910925078294,
+            "y": 322.0683720790171
+        }
+    },
+    {
+        "frame_idx": 478,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000478/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1601,
+            "y_min": 470,
+            "x_max": 1776,
+            "y_max": 620
+        },
+        "center_of_mass": {
+            "x": 1688.3679753302342,
+            "y": 544.5408938187509
+        }
+    },
+    {
+        "frame_idx": 478,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "wall",
+        "mask_file": "frame_000478/mask_001_wall.png",
+        "bounding_box": {
+            "x_min": 1636,
+            "y_min": 10,
+            "x_max": 1919,
+            "y_max": 634
+        },
+        "center_of_mass": {
+            "x": 1798.6131222059996,
+            "y": 322.0580625254
+        }
+    }
+]

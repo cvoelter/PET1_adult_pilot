@@ -1,0 +1,5102 @@
+[
+    {
+        "frame_idx": 359,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000359/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 687,
+            "y_min": 475,
+            "x_max": 843,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 765.1846170292373,
+            "y": 546.3704099631193
+        }
+    },
+    {
+        "frame_idx": 359,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000359/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 99,
+            "x_max": 701,
+            "y_max": 602
+        },
+        "center_of_mass": {
+            "x": 306.87802653921136,
+            "y": 393.7866591199715
+        }
+    },
+    {
+        "frame_idx": 360,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000360/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 698,
+            "y_min": 474,
+            "x_max": 853,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 775.4318559408329,
+            "y": 545.561820033228
+        }
+    },
+    {
+        "frame_idx": 360,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000360/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 83,
+            "x_max": 710,
+            "y_max": 601
+        },
+        "center_of_mass": {
+            "x": 310.6526847356237,
+            "y": 390.09685944318113
+        }
+    },
+    {
+        "frame_idx": 361,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000361/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 708,
+            "y_min": 474,
+            "x_max": 864,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 785.7515705009766,
+            "y": 545.6038642242517
+        }
+    },
+    {
+        "frame_idx": 361,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000361/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 66,
+            "x_max": 721,
+            "y_max": 600
+        },
+        "center_of_mass": {
+            "x": 314.18058484465064,
+            "y": 385.7347613022434
+        }
+    },
+    {
+        "frame_idx": 362,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000362/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 718,
+            "y_min": 474,
+            "x_max": 872,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 795.4693499761993,
+            "y": 545.5326069709631
+        }
+    },
+    {
+        "frame_idx": 362,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000362/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 50,
+            "x_max": 731,
+            "y_max": 601
+        },
+        "center_of_mass": {
+            "x": 317.3601457316534,
+            "y": 381.1567204485864
+        }
+    },
+    {
+        "frame_idx": 363,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000363/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 728,
+            "y_min": 474,
+            "x_max": 882,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 805.3092522861754,
+            "y": 544.691339429801
+        }
+    },
+    {
+        "frame_idx": 363,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000363/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 34,
+            "x_max": 742,
+            "y_max": 600
+        },
+        "center_of_mass": {
+            "x": 320.3363024887095,
+            "y": 376.1318151244355
+        }
+    },
+    {
+        "frame_idx": 364,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000364/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 738,
+            "y_min": 473,
+            "x_max": 893,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 815.4413560411311,
+            "y": 543.7509640102828
+        }
+    },
+    {
+        "frame_idx": 364,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000364/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 21,
+            "x_max": 751,
+            "y_max": 598
+        },
+        "center_of_mass": {
+            "x": 322.5189612842304,
+            "y": 370.8488668555241
+        }
+    },
+    {
+        "frame_idx": 365,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000365/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 748,
+            "y_min": 471,
+            "x_max": 903,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 825.6469397539018,
+            "y": 542.8806796995685
+        }
+    },
+    {
+        "frame_idx": 365,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000365/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 8,
+            "x_max": 761,
+            "y_max": 601
+        },
+        "center_of_mass": {
+            "x": 326.169772218758,
+            "y": 366.13712724204964
+        }
+    },
+    {
+        "frame_idx": 366,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000366/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 759,
+            "y_min": 471,
+            "x_max": 914,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 836.5893548216085,
+            "y": 542.8929650638817
+        }
+    },
+    {
+        "frame_idx": 366,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000366/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 11,
+            "x_max": 771,
+            "y_max": 598
+        },
+        "center_of_mass": {
+            "x": 328.7721030509457,
+            "y": 359.7453619827524
+        }
+    },
+    {
+        "frame_idx": 367,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000367/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 769,
+            "y_min": 470,
+            "x_max": 924,
+            "y_max": 615
+        },
+        "center_of_mass": {
+            "x": 846.3319008965993,
+            "y": 542.0335826834315
+        }
+    },
+    {
+        "frame_idx": 367,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000367/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 3,
+            "x_max": 783,
+            "y_max": 598
+        },
+        "center_of_mass": {
+            "x": 333.2770234433012,
+            "y": 353.979500371274
+        }
+    },
+    {
+        "frame_idx": 368,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000368/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 779,
+            "y_min": 470,
+            "x_max": 935,
+            "y_max": 613
+        },
+        "center_of_mass": {
+            "x": 858.1131216931217,
+            "y": 541.6376190476191
+        }
+    },
+    {
+        "frame_idx": 368,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000368/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 5,
+            "x_max": 793,
+            "y_max": 597
+        },
+        "center_of_mass": {
+            "x": 338.1803305813913,
+            "y": 348.0475058348138
+        }
+    },
+    {
+        "frame_idx": 369,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000369/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 792,
+            "y_min": 470,
+            "x_max": 947,
+            "y_max": 613
+        },
+        "center_of_mass": {
+            "x": 869.6609596279857,
+            "y": 541.5968611287254
+        }
+    },
+    {
+        "frame_idx": 369,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000369/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 5,
+            "x_max": 805,
+            "y_max": 595
+        },
+        "center_of_mass": {
+            "x": 343.3955398659737,
+            "y": 342.5786634983589
+        }
+    },
+    {
+        "frame_idx": 370,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000370/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 802,
+            "y_min": 470,
+            "x_max": 958,
+            "y_max": 613
+        },
+        "center_of_mass": {
+            "x": 881.002317619173,
+            "y": 542.0139057150382
+        }
+    },
+    {
+        "frame_idx": 370,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000370/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 6,
+            "x_max": 817,
+            "y_max": 594
+        },
+        "center_of_mass": {
+            "x": 349.37620770913986,
+            "y": 337.7435616899512
+        }
+    },
+    {
+        "frame_idx": 371,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000371/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 814,
+            "y_min": 470,
+            "x_max": 970,
+            "y_max": 613
+        },
+        "center_of_mass": {
+            "x": 892.1727467251187,
+            "y": 542.1546370231199
+        }
+    },
+    {
+        "frame_idx": 371,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000371/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 5,
+            "x_max": 828,
+            "y_max": 595
+        },
+        "center_of_mass": {
+            "x": 355.05473523632656,
+            "y": 332.93733055871064
+        }
+    },
+    {
+        "frame_idx": 372,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000372/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 825,
+            "y_min": 470,
+            "x_max": 981,
+            "y_max": 613
+        },
+        "center_of_mass": {
+            "x": 902.7290346236447,
+            "y": 542.0141427897962
+        }
+    },
+    {
+        "frame_idx": 372,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000372/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 6,
+            "x_max": 839,
+            "y_max": 593
+        },
+        "center_of_mass": {
+            "x": 362.240897939156,
+            "y": 329.241609421001
+        }
+    },
+    {
+        "frame_idx": 373,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000373/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 835,
+            "y_min": 470,
+            "x_max": 992,
+            "y_max": 613
+        },
+        "center_of_mass": {
+            "x": 913.876641505532,
+            "y": 542.9460758970117
+        }
+    },
+    {
+        "frame_idx": 373,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000373/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 6,
+            "x_max": 850,
+            "y_max": 592
+        },
+        "center_of_mass": {
+            "x": 369.20952573321483,
+            "y": 326.11783954108427
+        }
+    },
+    {
+        "frame_idx": 374,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000374/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 846,
+            "y_min": 470,
+            "x_max": 1002,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 924.7173811379579,
+            "y": 542.8447388932191
+        }
+    },
+    {
+        "frame_idx": 374,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000374/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 5,
+            "x_max": 861,
+            "y_max": 593
+        },
+        "center_of_mass": {
+            "x": 375.88723537036145,
+            "y": 323.38431504328486
+        }
+    },
+    {
+        "frame_idx": 375,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000375/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 856,
+            "y_min": 470,
+            "x_max": 1013,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 934.8362594237323,
+            "y": 543.0359909119074
+        }
+    },
+    {
+        "frame_idx": 375,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000375/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 5,
+            "x_max": 871,
+            "y_max": 592
+        },
+        "center_of_mass": {
+            "x": 382.2783583628031,
+            "y": 321.1772546345486
+        }
+    },
+    {
+        "frame_idx": 376,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000376/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 864,
+            "y_min": 470,
+            "x_max": 1023,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 944.8718665837995,
+            "y": 543.2899834265589
+        }
+    },
+    {
+        "frame_idx": 376,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000376/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 10,
+            "x_max": 880,
+            "y_max": 593
+        },
+        "center_of_mass": {
+            "x": 390.14229249011856,
+            "y": 320.82117402415986
+        }
+    },
+    {
+        "frame_idx": 377,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000377/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 874,
+            "y_min": 470,
+            "x_max": 1031,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 953.2498697509639,
+            "y": 542.945295404814
+        }
+    },
+    {
+        "frame_idx": 377,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000377/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 9,
+            "x_max": 889,
+            "y_max": 594
+        },
+        "center_of_mass": {
+            "x": 396.2798467023733,
+            "y": 319.9444924372124
+        }
+    },
+    {
+        "frame_idx": 378,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000378/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 883,
+            "y_min": 470,
+            "x_max": 1041,
+            "y_max": 615
+        },
+        "center_of_mass": {
+            "x": 962.696168542807,
+            "y": 543.3446245998141
+        }
+    },
+    {
+        "frame_idx": 378,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000378/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 11,
+            "x_max": 898,
+            "y_max": 592
+        },
+        "center_of_mass": {
+            "x": 402.69815652010965,
+            "y": 319.9888657250162
+        }
+    },
+    {
+        "frame_idx": 379,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000379/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 890,
+            "y_min": 471,
+            "x_max": 1048,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 970.7467936973251,
+            "y": 543.6161335915825
+        }
+    },
+    {
+        "frame_idx": 379,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000379/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 16,
+            "x_max": 907,
+            "y_max": 592
+        },
+        "center_of_mass": {
+            "x": 410.4437927280986,
+            "y": 321.37037675121576
+        }
+    },
+    {
+        "frame_idx": 380,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000380/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 899,
+            "y_min": 471,
+            "x_max": 1056,
+            "y_max": 614
+        },
+        "center_of_mass": {
+            "x": 978.8555352002094,
+            "y": 543.683433656111
+        }
+    },
+    {
+        "frame_idx": 380,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000380/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 17,
+            "x_max": 914,
+            "y_max": 595
+        },
+        "center_of_mass": {
+            "x": 417.3308432662811,
+            "y": 322.1721658899843
+        }
+    },
+    {
+        "frame_idx": 381,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000381/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 906,
+            "y_min": 471,
+            "x_max": 1066,
+            "y_max": 615
+        },
+        "center_of_mass": {
+            "x": 986.7205051853373,
+            "y": 544.0929253516788
+        }
+    },
+    {
+        "frame_idx": 381,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000381/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 19,
+            "x_max": 923,
+            "y_max": 594
+        },
+        "center_of_mass": {
+            "x": 423.86201556420235,
+            "y": 322.794280155642
+        }
+    },
+    {
+        "frame_idx": 382,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000382/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 913,
+            "y_min": 471,
+            "x_max": 1073,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 994.5506215787589,
+            "y": 544.4900496239832
+        }
+    },
+    {
+        "frame_idx": 382,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000382/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 19,
+            "x_max": 932,
+            "y_max": 594
+        },
+        "center_of_mass": {
+            "x": 430.1642440736674,
+            "y": 322.9899024262011
+        }
+    },
+    {
+        "frame_idx": 383,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000383/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 922,
+            "y_min": 472,
+            "x_max": 1080,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1002.2395844210087,
+            "y": 544.0161324005429
+        }
+    },
+    {
+        "frame_idx": 383,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000383/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 23,
+            "x_max": 938,
+            "y_max": 594
+        },
+        "center_of_mass": {
+            "x": 437.1929457677716,
+            "y": 323.93419211393746
+        }
+    },
+    {
+        "frame_idx": 384,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000384/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 928,
+            "y_min": 471,
+            "x_max": 1087,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1008.9160082093381,
+            "y": 544.5577219086712
+        }
+    },
+    {
+        "frame_idx": 384,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000384/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 23,
+            "x_max": 944,
+            "y_max": 595
+        },
+        "center_of_mass": {
+            "x": 443.2308244059326,
+            "y": 324.3282584048682
+        }
+    },
+    {
+        "frame_idx": 385,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000385/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 937,
+            "y_min": 472,
+            "x_max": 1094,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1015.9582702251006,
+            "y": 544.1540711338591
+        }
+    },
+    {
+        "frame_idx": 385,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000385/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 25,
+            "x_max": 951,
+            "y_max": 595
+        },
+        "center_of_mass": {
+            "x": 449.1965325946901,
+            "y": 324.8703156465314
+        }
+    },
+    {
+        "frame_idx": 386,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000386/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 942,
+            "y_min": 471,
+            "x_max": 1101,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1022.7260858257478,
+            "y": 544.3865279583875
+        }
+    },
+    {
+        "frame_idx": 386,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000386/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 26,
+            "x_max": 959,
+            "y_max": 594
+        },
+        "center_of_mass": {
+            "x": 455.440044411547,
+            "y": 325.3649765605724
+        }
+    },
+    {
+        "frame_idx": 387,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000387/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 950,
+            "y_min": 472,
+            "x_max": 1107,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1029.635884042831,
+            "y": 544.5890833115697
+        }
+    },
+    {
+        "frame_idx": 387,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000387/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 6,
+            "y_min": 28,
+            "x_max": 965,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 461.9494965059749,
+            "y": 326.0259336019662
+        }
+    },
+    {
+        "frame_idx": 388,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000388/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 956,
+            "y_min": 471,
+            "x_max": 1114,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1036.3470815495457,
+            "y": 544.4739480004176
+        }
+    },
+    {
+        "frame_idx": 388,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000388/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 12,
+            "y_min": 28,
+            "x_max": 970,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 468.7142724458204,
+            "y": 326.57602167182665
+        }
+    },
+    {
+        "frame_idx": 389,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000389/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 962,
+            "y_min": 471,
+            "x_max": 1121,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1042.3677382966723,
+            "y": 544.9097061990464
+        }
+    },
+    {
+        "frame_idx": 389,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000389/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 14,
+            "y_min": 29,
+            "x_max": 977,
+            "y_max": 597
+        },
+        "center_of_mass": {
+            "x": 473.96674788811424,
+            "y": 326.3053106528206
+        }
+    },
+    {
+        "frame_idx": 390,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000390/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 969,
+            "y_min": 472,
+            "x_max": 1127,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1048.7892754381376,
+            "y": 544.5934606330107
+        }
+    },
+    {
+        "frame_idx": 390,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000390/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 26,
+            "y_min": 31,
+            "x_max": 982,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 480.26171902181056,
+            "y": 326.66616154197044
+        }
+    },
+    {
+        "frame_idx": 391,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000391/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 975,
+            "y_min": 472,
+            "x_max": 1133,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1054.3672210019872,
+            "y": 544.718178014852
+        }
+    },
+    {
+        "frame_idx": 391,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000391/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 29,
+            "y_min": 32,
+            "x_max": 988,
+            "y_max": 595
+        },
+        "center_of_mass": {
+            "x": 485.4106230847804,
+            "y": 326.24367784071563
+        }
+    },
+    {
+        "frame_idx": 392,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000392/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 980,
+            "y_min": 473,
+            "x_max": 1137,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1059.770834419138,
+            "y": 544.8922186897379
+        }
+    },
+    {
+        "frame_idx": 392,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000392/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 29,
+            "y_min": 29,
+            "x_max": 994,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 489.1044444273482,
+            "y": 325.14511128378325
+        }
+    },
+    {
+        "frame_idx": 393,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000393/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 984,
+            "y_min": 473,
+            "x_max": 1141,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1063.3939728041162,
+            "y": 544.6089147897306
+        }
+    },
+    {
+        "frame_idx": 393,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000393/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 31,
+            "y_min": 29,
+            "x_max": 998,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 493.4741283161676,
+            "y": 324.85525394786436
+        }
+    },
+    {
+        "frame_idx": 394,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000394/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 988,
+            "y_min": 472,
+            "x_max": 1144,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1066.8706264403938,
+            "y": 544.5853760737482
+        }
+    },
+    {
+        "frame_idx": 394,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000394/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 33,
+            "y_min": 28,
+            "x_max": 1001,
+            "y_max": 595
+        },
+        "center_of_mass": {
+            "x": 496.7587333307713,
+            "y": 324.25013642826946
+        }
+    },
+    {
+        "frame_idx": 395,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000395/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 990,
+            "y_min": 472,
+            "x_max": 1149,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1070.7577829577829,
+            "y": 544.9274281274281
+        }
+    },
+    {
+        "frame_idx": 395,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000395/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 38,
+            "y_min": 29,
+            "x_max": 1003,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 500.39647049737414,
+            "y": 324.50115075687364
+        }
+    },
+    {
+        "frame_idx": 396,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000396/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 993,
+            "y_min": 472,
+            "x_max": 1151,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1072.8730109204369,
+            "y": 544.8423816952678
+        }
+    },
+    {
+        "frame_idx": 396,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000396/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 41,
+            "y_min": 30,
+            "x_max": 1005,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 502.249148132086,
+            "y": 324.6134068521157
+        }
+    },
+    {
+        "frame_idx": 397,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000397/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 996,
+            "y_min": 472,
+            "x_max": 1153,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1075.0071606475717,
+            "y": 545.0159298464093
+        }
+    },
+    {
+        "frame_idx": 397,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000397/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 42,
+            "y_min": 32,
+            "x_max": 1007,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 503.86650224596616,
+            "y": 325.30262171126384
+        }
+    },
+    {
+        "frame_idx": 398,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000398/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 998,
+            "y_min": 473,
+            "x_max": 1155,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1077.2262170727906,
+            "y": 545.1823141268769
+        }
+    },
+    {
+        "frame_idx": 398,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000398/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 42,
+            "y_min": 33,
+            "x_max": 1010,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 505.7084781097985,
+            "y": 326.52190564435176
+        }
+    },
+    {
+        "frame_idx": 399,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000399/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 473,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1079.1324592194921,
+            "y": 545.254491017964
+        }
+    },
+    {
+        "frame_idx": 399,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000399/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 43,
+            "y_min": 34,
+            "x_max": 1011,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 506.9347275669565,
+            "y": 327.51602387902534
+        }
+    },
+    {
+        "frame_idx": 400,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000400/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1001,
+            "y_min": 473,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1079.7504695325542,
+            "y": 545.0154945742905
+        }
+    },
+    {
+        "frame_idx": 400,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000400/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 41,
+            "y_min": 34,
+            "x_max": 1013,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 507.3435000230305,
+            "y": 327.91934716187376
+        }
+    },
+    {
+        "frame_idx": 401,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000401/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1002,
+            "y_min": 473,
+            "x_max": 1160,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1081.408081224553,
+            "y": 545.4782765551719
+        }
+    },
+    {
+        "frame_idx": 401,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000401/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 42,
+            "y_min": 35,
+            "x_max": 1014,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 508.29739245410656,
+            "y": 328.45547492389534
+        }
+    },
+    {
+        "frame_idx": 402,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000402/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1002,
+            "y_min": 473,
+            "x_max": 1160,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1081.9995881383854,
+            "y": 545.4956754530477
+        }
+    },
+    {
+        "frame_idx": 402,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000402/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 42,
+            "y_min": 35,
+            "x_max": 1014,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 508.62997303671153,
+            "y": 328.68345406638656
+        }
+    },
+    {
+        "frame_idx": 403,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000403/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1002,
+            "y_min": 473,
+            "x_max": 1160,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1081.798664269201,
+            "y": 545.5094785512458
+        }
+    },
+    {
+        "frame_idx": 403,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000403/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 41,
+            "y_min": 35,
+            "x_max": 1014,
+            "y_max": 597
+        },
+        "center_of_mass": {
+            "x": 508.2081924607282,
+            "y": 328.45982351633353
+        }
+    },
+    {
+        "frame_idx": 404,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000404/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1001,
+            "y_min": 473,
+            "x_max": 1160,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1081.3827071538858,
+            "y": 545.4301595470921
+        }
+    },
+    {
+        "frame_idx": 404,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000404/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 41,
+            "y_min": 34,
+            "x_max": 1013,
+            "y_max": 597
+        },
+        "center_of_mass": {
+            "x": 508.1151844971518,
+            "y": 328.2294671281344
+        }
+    },
+    {
+        "frame_idx": 405,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000405/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1001,
+            "y_min": 473,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1080.6123110151188,
+            "y": 545.3094723850663
+        }
+    },
+    {
+        "frame_idx": 405,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000405/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 40,
+            "y_min": 32,
+            "x_max": 1013,
+            "y_max": 597
+        },
+        "center_of_mass": {
+            "x": 505.9169618050255,
+            "y": 326.5201355601014
+        }
+    },
+    {
+        "frame_idx": 406,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000406/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1001,
+            "y_min": 473,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1080.1203260315842,
+            "y": 545.1475292919001
+        }
+    },
+    {
+        "frame_idx": 406,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000406/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 40,
+            "y_min": 30,
+            "x_max": 1011,
+            "y_max": 596
+        },
+        "center_of_mass": {
+            "x": 504.18908450974817,
+            "y": 325.3035496092279
+        }
+    },
+    {
+        "frame_idx": 407,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000407/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1001,
+            "y_min": 473,
+            "x_max": 1160,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1080.077441077441,
+            "y": 544.8549637792062
+        }
+    },
+    {
+        "frame_idx": 407,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000407/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 36,
+            "y_min": 28,
+            "x_max": 1011,
+            "y_max": 594
+        },
+        "center_of_mass": {
+            "x": 500.043011414331,
+            "y": 322.8461988124173
+        }
+    },
+    {
+        "frame_idx": 408,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000408/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 473,
+            "x_max": 1160,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1079.2865219586067,
+            "y": 544.7673397274104
+        }
+    },
+    {
+        "frame_idx": 408,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000408/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 27,
+            "y_min": 24,
+            "x_max": 1010,
+            "y_max": 594
+        },
+        "center_of_mass": {
+            "x": 492.96729807824613,
+            "y": 319.4591340641196
+        }
+    },
+    {
+        "frame_idx": 409,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000409/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 473,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1079.0118014928385,
+            "y": 544.5917893887432
+        }
+    },
+    {
+        "frame_idx": 409,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000409/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 23,
+            "y_min": 23,
+            "x_max": 1007,
+            "y_max": 584
+        },
+        "center_of_mass": {
+            "x": 484.42769079784705,
+            "y": 316.78472850505267
+        }
+    },
+    {
+        "frame_idx": 410,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000410/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 473,
+            "x_max": 1160,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1079.1670505758639,
+            "y": 544.5814722083124
+        }
+    },
+    {
+        "frame_idx": 410,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000410/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 11,
+            "y_min": 19,
+            "x_max": 997,
+            "y_max": 579
+        },
+        "center_of_mass": {
+            "x": 472.07493912057953,
+            "y": 314.24000275680396
+        }
+    },
+    {
+        "frame_idx": 411,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000411/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 473,
+            "x_max": 1159,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.7097168466082,
+            "y": 544.382562640049
+        }
+    },
+    {
+        "frame_idx": 411,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000411/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 17,
+            "x_max": 981,
+            "y_max": 571
+        },
+        "center_of_mass": {
+            "x": 454.7172490166877,
+            "y": 311.5960973001871
+        }
+    },
+    {
+        "frame_idx": 412,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000412/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 473,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.6029044814852,
+            "y": 544.7294141131849
+        }
+    },
+    {
+        "frame_idx": 412,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000412/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 15,
+            "x_max": 962,
+            "y_max": 562
+        },
+        "center_of_mass": {
+            "x": 434.73305049050765,
+            "y": 310.8162032179753
+        }
+    },
+    {
+        "frame_idx": 413,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000413/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 473,
+            "x_max": 1160,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1079.2371559402204,
+            "y": 544.4933326624063
+        }
+    },
+    {
+        "frame_idx": 413,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000413/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 18,
+            "x_max": 931,
+            "y_max": 553
+        },
+        "center_of_mass": {
+            "x": 411.7164394234515,
+            "y": 313.26140241527077
+        }
+    },
+    {
+        "frame_idx": 414,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000414/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1079.2150434913772,
+            "y": 544.540550052793
+        }
+    },
+    {
+        "frame_idx": 414,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000414/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 17,
+            "x_max": 896,
+            "y_max": 546
+        },
+        "center_of_mass": {
+            "x": 384.6511820396194,
+            "y": 318.04125117258013
+        }
+    },
+    {
+        "frame_idx": 415,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000415/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.516438843437,
+            "y": 544.207734132832
+        }
+    },
+    {
+        "frame_idx": 415,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000415/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 6,
+            "x_max": 850,
+            "y_max": 540
+        },
+        "center_of_mass": {
+            "x": 356.6624491089495,
+            "y": 327.50339273669925
+        }
+    },
+    {
+        "frame_idx": 416,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000416/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3789284645316,
+            "y": 544.46732515215
+        }
+    },
+    {
+        "frame_idx": 416,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000416/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 778,
+            "y_max": 537
+        },
+        "center_of_mass": {
+            "x": 329.90885021012696,
+            "y": 343.24766550274984
+        }
+    },
+    {
+        "frame_idx": 417,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000417/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.3084183285127,
+            "y": 544.1998782158623
+        }
+    },
+    {
+        "frame_idx": 417,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000417/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 75,
+            "x_max": 699,
+            "y_max": 538
+        },
+        "center_of_mass": {
+            "x": 309.6208820974089,
+            "y": 371.44412531302703
+        }
+    },
+    {
+        "frame_idx": 418,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000418/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.2798014083794,
+            "y": 544.1928162520898
+        }
+    },
+    {
+        "frame_idx": 418,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000418/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 163,
+            "x_max": 613,
+            "y_max": 548
+        },
+        "center_of_mass": {
+            "x": 279.09161259879676,
+            "y": 399.2357909637844
+        }
+    },
+    {
+        "frame_idx": 419,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000419/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.3010452608078,
+            "y": 544.1228942561396
+        }
+    },
+    {
+        "frame_idx": 419,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000419/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 211,
+            "x_max": 522,
+            "y_max": 563
+        },
+        "center_of_mass": {
+            "x": 238.20028796500117,
+            "y": 429.78500920657336
+        }
+    },
+    {
+        "frame_idx": 420,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000420/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.1969405328741,
+            "y": 544.107841150846
+        }
+    },
+    {
+        "frame_idx": 420,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000420/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 276,
+            "x_max": 422,
+            "y_max": 585
+        },
+        "center_of_mass": {
+            "x": 189.65719910974147,
+            "y": 469.5374079780859
+        }
+    },
+    {
+        "frame_idx": 421,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000421/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.1198621458618,
+            "y": 544.1648167857686
+        }
+    },
+    {
+        "frame_idx": 421,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000421/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 371,
+            "x_max": 309,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 136.72117696005918,
+            "y": 520.3655926405326
+        }
+    },
+    {
+        "frame_idx": 422,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000422/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.2693091501935,
+            "y": 543.933819034033
+        }
+    },
+    {
+        "frame_idx": 422,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000422/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 486,
+            "x_max": 184,
+            "y_max": 657
+        },
+        "center_of_mass": {
+            "x": 77.86418943832193,
+            "y": 570.1413822770289
+        }
+    },
+    {
+        "frame_idx": 423,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000423/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.84618496233,
+            "y": 544.1632199019062
+        }
+    },
+    {
+        "frame_idx": 423,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000423/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 546,
+            "x_max": 46,
+            "y_max": 667
+        },
+        "center_of_mass": {
+            "x": 17.320653629788374,
+            "y": 609.9124028931154
+        }
+    },
+    {
+        "frame_idx": 424,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000424/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.2524742373228,
+            "y": 543.941026425875
+        }
+    },
+    {
+        "frame_idx": 424,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000424/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 425,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000425/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.2945167049222,
+            "y": 543.9303749043611
+        }
+    },
+    {
+        "frame_idx": 425,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000425/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 426,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000426/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.270837578969,
+            "y": 544.0123293254534
+        }
+    },
+    {
+        "frame_idx": 426,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000426/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 427,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000427/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.2687000356434,
+            "y": 544.0563165130608
+        }
+    },
+    {
+        "frame_idx": 427,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000427/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 428,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000428/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.2512734311329,
+            "y": 544.0182864710677
+        }
+    },
+    {
+        "frame_idx": 428,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000428/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 429,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000429/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.2837768940553,
+            "y": 543.984806770674
+        }
+    },
+    {
+        "frame_idx": 429,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000429/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 430,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000430/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.246956344557,
+            "y": 544.0150781926545
+        }
+    },
+    {
+        "frame_idx": 430,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000430/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 431,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000431/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 616
+        },
+        "center_of_mass": {
+            "x": 1078.188763816024,
+            "y": 544.0199663831304
+        }
+    },
+    {
+        "frame_idx": 431,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000431/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 432,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000432/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.1634605597965,
+            "y": 544.1177099236642
+        }
+    },
+    {
+        "frame_idx": 432,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000432/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 433,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000433/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.223087890824,
+            "y": 544.126744067624
+        }
+    },
+    {
+        "frame_idx": 433,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000433/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 434,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000434/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.1337227018792,
+            "y": 544.2821229050279
+        }
+    },
+    {
+        "frame_idx": 434,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000434/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 435,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000435/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.7300764741397,
+            "y": 544.3625981082713
+        }
+    },
+    {
+        "frame_idx": 435,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000435/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 436,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000436/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.2349385349994,
+            "y": 544.2695316468556
+        }
+    },
+    {
+        "frame_idx": 436,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000436/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 437,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000437/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 471,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.6817633457324,
+            "y": 544.353825273952
+        }
+    },
+    {
+        "frame_idx": 437,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000437/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 438,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000438/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 471,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.6539889613648,
+            "y": 544.3828399397893
+        }
+    },
+    {
+        "frame_idx": 438,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000438/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 439,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000439/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.322099279261,
+            "y": 544.283321490204
+        }
+    },
+    {
+        "frame_idx": 439,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000439/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 440,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000440/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3211875158588,
+            "y": 544.3535650850038
+        }
+    },
+    {
+        "frame_idx": 440,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000440/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 441,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000441/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.355476673428,
+            "y": 544.3384888438134
+        }
+    },
+    {
+        "frame_idx": 441,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000441/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 442,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000442/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3272930308106,
+            "y": 544.3169889853307
+        }
+    },
+    {
+        "frame_idx": 442,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000442/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 443,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000443/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3634242823816,
+            "y": 544.3560705953951
+        }
+    },
+    {
+        "frame_idx": 443,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000443/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 444,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000444/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3085856280745,
+            "y": 544.3793802931183
+        }
+    },
+    {
+        "frame_idx": 444,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000444/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 445,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000445/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.2913537649686,
+            "y": 544.3701035112645
+        }
+    },
+    {
+        "frame_idx": 445,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000445/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 446,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000446/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3271407542763,
+            "y": 544.3358712755697
+        }
+    },
+    {
+        "frame_idx": 446,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000446/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 447,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000447/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3289353496398,
+            "y": 544.3077742819446
+        }
+    },
+    {
+        "frame_idx": 447,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000447/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 448,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000448/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.2713103518302,
+            "y": 544.3301517997664
+        }
+    },
+    {
+        "frame_idx": 448,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000448/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 449,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000449/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.308959991887,
+            "y": 544.3388266315095
+        }
+    },
+    {
+        "frame_idx": 449,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000449/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 450,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000450/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3327920430327,
+            "y": 544.3105653100579
+        }
+    },
+    {
+        "frame_idx": 450,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000450/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 451,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000451/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3375107818763,
+            "y": 544.3307625957684
+        }
+    },
+    {
+        "frame_idx": 451,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000451/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 452,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000452/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3627201465947,
+            "y": 544.2388272421867
+        }
+    },
+    {
+        "frame_idx": 452,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000452/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 453,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000453/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3753435813906,
+            "y": 544.2505853608877
+        }
+    },
+    {
+        "frame_idx": 453,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000453/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 454,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000454/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3409345413825,
+            "y": 544.2352132749669
+        }
+    },
+    {
+        "frame_idx": 454,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000454/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 455,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000455/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3487957635318,
+            "y": 544.2408472936504
+        }
+    },
+    {
+        "frame_idx": 455,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000455/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 456,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000456/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3513059416528,
+            "y": 544.2469833511532
+        }
+    },
+    {
+        "frame_idx": 456,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000456/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 457,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000457/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3388139475694,
+            "y": 544.2393484347162
+        }
+    },
+    {
+        "frame_idx": 457,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000457/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 458,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000458/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3343172680543,
+            "y": 544.2371621965494
+        }
+    },
+    {
+        "frame_idx": 458,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000458/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 459,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000459/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3357081064578,
+            "y": 544.2448221464557
+        }
+    },
+    {
+        "frame_idx": 459,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000459/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 460,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000460/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3328075709778,
+            "y": 544.2489060750992
+        }
+    },
+    {
+        "frame_idx": 460,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000460/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 461,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000461/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.331807081807,
+            "y": 544.2562576312577
+        }
+    },
+    {
+        "frame_idx": 461,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000461/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 462,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000462/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3260405006615,
+            "y": 544.2449882975476
+        }
+    },
+    {
+        "frame_idx": 462,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000462/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 463,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000463/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3247010938692,
+            "y": 544.2486390231493
+        }
+    },
+    {
+        "frame_idx": 463,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000463/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 464,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000464/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.334995167116,
+            "y": 544.2522256702447
+        }
+    },
+    {
+        "frame_idx": 464,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000464/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 465,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000465/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3303489673415,
+            "y": 544.2588259232882
+        }
+    },
+    {
+        "frame_idx": 465,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000465/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 466,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000466/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3233468972533,
+            "y": 544.2457273652085
+        }
+    },
+    {
+        "frame_idx": 466,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000466/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 467,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000467/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3228710957371,
+            "y": 544.2532302370536
+        }
+    },
+    {
+        "frame_idx": 467,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000467/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 468,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000468/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3303489673415,
+            "y": 544.2588259232882
+        }
+    },
+    {
+        "frame_idx": 468,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000468/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 469,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000469/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3314003764178,
+            "y": 544.2624243349102
+        }
+    },
+    {
+        "frame_idx": 469,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000469/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 470,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000470/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3208055739206,
+            "y": 544.2412144637136
+        }
+    },
+    {
+        "frame_idx": 470,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000470/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 471,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000471/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.324874129075,
+            "y": 544.254640695723
+        }
+    },
+    {
+        "frame_idx": 471,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000471/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 472,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000472/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.33007832367,
+            "y": 544.2524666870105
+        }
+    },
+    {
+        "frame_idx": 472,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000472/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 473,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000473/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3363844393593,
+            "y": 544.2632087465039
+        }
+    },
+    {
+        "frame_idx": 473,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000473/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 474,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000474/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.320420924203,
+            "y": 544.2455391184993
+        }
+    },
+    {
+        "frame_idx": 474,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000474/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 475,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000475/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.33216374269,
+            "y": 544.2584795321637
+        }
+    },
+    {
+        "frame_idx": 475,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000475/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 476,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000476/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3368255098408,
+            "y": 544.2539286985709
+        }
+    },
+    {
+        "frame_idx": 476,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000476/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 477,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000477/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3349267697315,
+            "y": 544.2576281529699
+        }
+    },
+    {
+        "frame_idx": 477,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000477/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 478,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000478/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3258426966293,
+            "y": 544.2377853475011
+        }
+    },
+    {
+        "frame_idx": 478,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000478/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 479,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000479/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.33216374269,
+            "y": 544.2584795321637
+        }
+    },
+    {
+        "frame_idx": 479,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000479/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 480,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000480/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.647672552167,
+            "y": 544.3316613162119
+        }
+    },
+    {
+        "frame_idx": 480,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000480/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 481,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000481/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.6597023898994,
+            "y": 544.3617916729295
+        }
+    },
+    {
+        "frame_idx": 481,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000481/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 482,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000482/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.6711093295921,
+            "y": 544.373133580519
+        }
+    },
+    {
+        "frame_idx": 482,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000482/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 483,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000483/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.698207669971,
+            "y": 544.3865525182738
+        }
+    },
+    {
+        "frame_idx": 483,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000483/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 484,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000484/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.2679195582798,
+            "y": 544.2809888050251
+        }
+    },
+    {
+        "frame_idx": 484,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000484/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 485,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000485/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 471,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.7243948789758,
+            "y": 544.3693238647729
+        }
+    },
+    {
+        "frame_idx": 485,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000485/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 486,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000486/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 471,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.7428685617226,
+            "y": 544.3789778688115
+        }
+    },
+    {
+        "frame_idx": 486,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000486/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 487,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000487/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 471,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.757842157842,
+            "y": 544.3814185814185
+        }
+    },
+    {
+        "frame_idx": 487,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000487/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 488,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000488/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 471,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.7664102307922,
+            "y": 544.3861524627835
+        }
+    },
+    {
+        "frame_idx": 488,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000488/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 489,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000489/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 471,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.784251024283,
+            "y": 544.3835814929549
+        }
+    },
+    {
+        "frame_idx": 489,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000489/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 490,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000490/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.320317636943,
+            "y": 544.2855191947802
+        }
+    },
+    {
+        "frame_idx": 490,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000490/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 491,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000491/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.3080232852442,
+            "y": 544.2495570741585
+        }
+    },
+    {
+        "frame_idx": 491,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000491/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 492,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000492/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.2636672239955,
+            "y": 544.1968890915539
+        }
+    },
+    {
+        "frame_idx": 492,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000492/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 493,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000493/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 998,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.2622200099552,
+            "y": 544.5022399203584
+        }
+    },
+    {
+        "frame_idx": 493,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000493/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 494,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000494/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.7782634911064,
+            "y": 544.397045523063
+        }
+    },
+    {
+        "frame_idx": 494,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000494/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 495,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000495/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.2312376312984,
+            "y": 544.174303546963
+        }
+    },
+    {
+        "frame_idx": 495,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000495/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 496,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000496/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 618
+        },
+        "center_of_mass": {
+            "x": 1078.6918774564144,
+            "y": 544.340169303638
+        }
+    },
+    {
+        "frame_idx": 496,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000496/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 497,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000497/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.1868422390564,
+            "y": 544.1609131120036
+        }
+    },
+    {
+        "frame_idx": 497,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000497/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 498,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000498/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.6625630676085,
+            "y": 544.315438950555
+        }
+    },
+    {
+        "frame_idx": 498,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000498/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 499,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000499/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.179964403763,
+            "y": 544.1615560640732
+        }
+    },
+    {
+        "frame_idx": 499,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000499/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 500,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000500/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.1855869620576,
+            "y": 544.1296664120193
+        }
+    },
+    {
+        "frame_idx": 500,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000500/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 501,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000501/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.6415438383224,
+            "y": 544.2894696854581
+        }
+    },
+    {
+        "frame_idx": 501,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000501/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 502,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000502/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.2000203998368,
+            "y": 544.1116381068952
+        }
+    },
+    {
+        "frame_idx": 502,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000502/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 503,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000503/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1159,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.6615923275992,
+            "y": 544.3065915664484
+        }
+    },
+    {
+        "frame_idx": 503,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000503/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 504,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000504/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.1881950821344,
+            "y": 544.0955004591368
+        }
+    },
+    {
+        "frame_idx": 504,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000504/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 505,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000505/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 1000,
+            "y_min": 472,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.6792318634423,
+            "y": 544.2748425116846
+        }
+    },
+    {
+        "frame_idx": 505,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000505/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 506,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000506/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 473,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.1910915870665,
+            "y": 544.1164121162589
+        }
+    },
+    {
+        "frame_idx": 506,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000506/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 507,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000507/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 473,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.2025445812683,
+            "y": 544.1096009401666
+        }
+    },
+    {
+        "frame_idx": 507,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000507/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    },
+    {
+        "frame_idx": 508,
+        "mask_idx": 0,
+        "object_id": 1,
+        "object_label": "apple",
+        "mask_file": "frame_000508/mask_000_apple.png",
+        "bounding_box": {
+            "x_min": 999,
+            "y_min": 473,
+            "x_max": 1158,
+            "y_max": 617
+        },
+        "center_of_mass": {
+            "x": 1078.1546961325967,
+            "y": 544.0985778596275
+        }
+    },
+    {
+        "frame_idx": 508,
+        "mask_idx": 1,
+        "object_id": 2,
+        "object_label": "hand",
+        "mask_file": "frame_000508/mask_001_hand.png",
+        "bounding_box": {
+            "x_min": 0,
+            "y_min": 0,
+            "x_max": 0,
+            "y_max": 0
+        },
+        "center_of_mass": {
+            "x": NaN,
+            "y": NaN
+        }
+    }
+]
