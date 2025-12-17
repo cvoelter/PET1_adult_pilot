@@ -4,6 +4,12 @@ output: html_document
 date: "2025-07-27"
 ---
 
+todo: create a table with the proportion on screen samples for three interest periods: start_event + 4000, relevant events (IP1-IP3) , and the bseline phase (start_event - 3000?)
+
+create a plot with the cumulative proportion of apes looking onscreen in 100msec bins of video time on x-axis
+
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 
@@ -29,16 +35,18 @@ xx <- as.data.frame(time_frame)
 # baseline.start<-0
 # baseline.end<-3000
 # start_ip <- 3000
-video.data <- read_csv("data/PET_adult_pilot_video_list.csv")%>%
+video.data <- read_csv("data/PET_adult_pilot_video_list_frame_by_frame_matched_29-97fps.csv")%>%
   mutate(video_file = str_remove(video_file, fixed(".mp4")))%>%
   filter(experiment!="attention_check")
 video.data_variable_names <- colnames(video.data)
+
+video.data
 ```
 
 ```{r}
 # Read the TSV file
 
-eye_data <- read_tsv("data/PET_network_study1_Ngamba_Data_Export_incl_AOIs.tsv",
+eye_data <- read_tsv("data/PET_network_study1_Ngamba_20_November.tsv",
                      na = c("", "NA", "N/A")) %>%
   rename_with( ~ gsub(" ", "_", .x)) %>%
   filter(
@@ -57,6 +65,8 @@ eye_data <- read_tsv("data/PET_network_study1_Ngamba_Data_Export_incl_AOIs.tsv",
       "solidity_ver2_n_test"
     )
   )
+
+str(eye_data)
 ```
 
 ```{r}
@@ -72,79 +82,79 @@ eye_data <- eye_data %>%
   rename(
     #Gravity Ver 1
 
-    'AOI_hit_gravity_ver1_cont_apple'  = 'AOI_hit_[gravity_ver1_n_cont_-_Ellipse]',
-    'AOI_hit_gravity_ver1_test_apple' = 'AOI_hit_[gravity_ver1_n_test_-_Ellipse]',
+    'AOI_hit_gravity_ver1_cont_apple'  = 'AOI_hit_[gravity_ver1_n_cont_-_apple]',
+    'AOI_hit_gravity_ver1_test_apple' = 'AOI_hit_[gravity_ver1_n_test_-_apple]',
 
-    'AOI_hit_gravity_ver1_cont_whole_screen'  = 'AOI_hit_[gravity_ver1_n_cont_-_Gravity_Ver1_WholeScreen]',
-    'AOI_hit_gravity_ver1_test_whole_screen' = 'AOI_hit_[gravity_ver1_n_test_-_Gravity_Ver1_WholeScreen]',
+    'AOI_hit_gravity_ver1_cont_whole_screen'  = 'AOI_hit_[gravity_ver1_n_cont_-_whole_screen]',
+    'AOI_hit_gravity_ver1_test_whole_screen' = 'AOI_hit_[gravity_ver1_n_test_-_whole_screen]',
 
-    'AOI_hit_gravity_ver1_cont_supr_event'  = 'AOI_hit_[gravity_ver1_n_cont_-_Polygon]',
-    'AOI_hit_gravity_ver1_test_supr_event' = 'AOI_hit_[gravity_ver1_n_test_-_Polygon]',
+    'AOI_hit_gravity_ver1_cont_space_under_apple'  = 'AOI_hit_[gravity_ver1_n_cont_-_space_under_apple]',
+    'AOI_hit_gravity_ver1_test_space_under_apple' = 'AOI_hit_[gravity_ver1_n_test_-_space_under_apple]',
 
     #Gravity Ver 2
 
-    'AOI_hit_gravity_ver2_cont_apple' = 'AOI_hit_[gravity_ver2_n_cont_-_Ellipse]',
-    'AOI_hit_gravity_ver2_test_apple' = 'AOI_hit_[gravity_ver2_n_test_-_Ellipse]',
+    'AOI_hit_gravity_ver2_cont_apple' = 'AOI_hit_[gravity_ver2_n_cont_-_apple]',
+    'AOI_hit_gravity_ver2_test_apple' = 'AOI_hit_[gravity_ver2_n_test_-_apple]',
 
-    'AOI_hit_gravity_ver2_cont_whole_screen' = 'AOI_hit_[gravity_ver2_n_cont_-_Gravity_Ver2_WholeScreen]',
-    'AOI_hit_gravity_ver2_test_whole_screen' = 'AOI_hit_[gravity_ver2_n_test_-_Gravity_Ver2_WholeScreen]',
+    'AOI_hit_gravity_ver2_cont_whole_screen' = 'AOI_hit_[gravity_ver2_n_cont_-_whole_screen]',
+    'AOI_hit_gravity_ver2_test_whole_screen' = 'AOI_hit_[gravity_ver2_n_test_-_whole_screen]',
 
-    'AOI_hit_gravity_ver2_cont_supr_event' = 'AOI_hit_[gravity_ver2_n_cont_-_Polygon]',
-    'AOI_hit_gravity_ver2_test_supr_event' = 'AOI_hit_[gravity_ver2_n_test_-_Polygon]',
+    'AOI_hit_gravity_ver2_cont_space_under_apple' = 'AOI_hit_[gravity_ver2_n_cont_-_space_under_apple]',
+    'AOI_hit_gravity_ver2_test_space_under_apple' = 'AOI_hit_[gravity_ver2_n_test_-_space_under_apple]',
 
     #Solidity Ver 1
 
-    'AOI_hit_solidity_ver1_cont_apple'  = 'AOI_hit_[solidity_ver1_n_cont_-_Ellipse]',
-    'AOI_hit_solidity_ver1_test_apple'  = 'AOI_hit_[solidity_ver1_n_test_-_Ellipse]',
+    'AOI_hit_solidity_ver1_cont_apple'  = 'AOI_hit_[solidity_ver1_n_cont_-_apple]',
+    'AOI_hit_solidity_ver1_test_apple'  = 'AOI_hit_[solidity_ver1_n_test_-_apple]',
 
-    'AOI_hit_solidity_ver1_cont_supr_event'  = 'AOI_hit_[solidity_ver1_n_cont_-_Polygon]',
-    'AOI_hit_solidity_ver1_test_supr_event'  = 'AOI_hit_[solidity_ver1_n_test_-_Polygon_1]',
+    'AOI_hit_solidity_ver1_cont_barrier'  = 'AOI_hit_[solidity_ver1_n_cont_-_barrier]',
+    'AOI_hit_solidity_ver1_test_barrier'  = 'AOI_hit_[solidity_ver1_n_test_-_barrier]',
 
-    'AOI_hit_solidity_ver1_cont_whole_screen'  = 'AOI_hit_[solidity_ver1_n_cont_-_Solidity_Ver1_WholeScreen]',
-    'AOI_hit_solidity_ver1_test_whole_screen'  = 'AOI_hit_[solidity_ver1_n_test_-_Solidity_Ver1_WholeScreen]',
+    'AOI_hit_solidity_ver1_cont_whole_screen'  = 'AOI_hit_[solidity_ver1_n_cont_-_whole_screen]',
+    'AOI_hit_solidity_ver1_test_whole_screen'  = 'AOI_hit_[solidity_ver1_n_test_-_whole_screen]',
 
     #Solidity Ver 2
 
-    'AOI_hit_solidity_ver2_cont_apple' = 'AOI_hit_[solidity_ver2_n_cont_-_Ellipse]',
-    'AOI_hit_solidity_ver2_test_apple' = 'AOI_hit_[solidity_ver2_n_test_-_Ellipse]',
+    'AOI_hit_solidity_ver2_cont_apple' = 'AOI_hit_[solidity_ver2_n_cont_-_apple]',
+    'AOI_hit_solidity_ver2_test_apple' = 'AOI_hit_[solidity_ver2_n_test_-_apple]',
 
-    'AOI_hit_solidity_ver2_cont_supr_event' = 'AOI_hit_[solidity_ver2_n_cont_-_Rectangle]',
-    'AOI_hit_solidity_ver2_test_supr_event' = 'AOI_hit_[solidity_ver2_n_test_-_Rectangle_2]',
+    'AOI_hit_solidity_ver2_cont_barrier_left' = 'AOI_hit_[solidity_ver2_n_cont_-_barrier_left]',
+    'AOI_hit_solidity_ver2_test_barrier_left' = 'AOI_hit_[solidity_ver2_n_test_-_barrier_left]',
 
-    # 'AOI_hit_solidity_ver2_cont_supr_event' = 'AOI_hit_[solidity_ver2_n_cont_-_Rectangle_2]',
-    # 'AOI_hit_solidity_ver2_test_supr_event' = 'AOI_hit_[solidity_ver2_n_test_-_Rectangle_2]',
+     'AOI_hit_solidity_ver2_cont_barrier_right' = 'AOI_hit_[solidity_ver2_n_cont_-_barrier_right]',
+     'AOI_hit_solidity_ver2_test_barrier_right' = 'AOI_hit_[solidity_ver2_n_test_-_barrier_right]',
 
-    'AOI_hit_solidity_ver2_cont_whole_screen' = 'AOI_hit_[solidity_ver2_n_cont_-_Solidity_Ver2_WholeScreen]',
-    'AOI_hit_solidity_ver2_test_whole_screen' = 'AOI_hit_[solidity_ver2_n_test_-_Solidity_Ver2_WholeScreen]',
+    'AOI_hit_solidity_ver2_cont_whole_screen' = 'AOI_hit_[solidity_ver2_n_cont_-_whole_screen]',
+    'AOI_hit_solidity_ver2_test_whole_screen' = 'AOI_hit_[solidity_ver2_n_test_-_whole_screen]',
     
 
     #Continuity Ver 1
 
-    'AOI_hit_continuity_ver1_cont_apple' = 'AOI_hit_[continuity_ver1_n_cont_-_Ellipse]',
-    'AOI_hit_continuity_ver1_test_apple' = 'AOI_hit_[continuity_ver1_n_test_-_Ellipse]',
+    'AOI_hit_continuity_ver1_cont_apple' = 'AOI_hit_[continuity_ver1_n_cont_-_apple]',
+    'AOI_hit_continuity_ver1_test_apple' = 'AOI_hit_[continuity_ver1_n_test_-_apple]',
 
     # here I two rectangles, but for each video, but there should only ne one_ I need to check which one is correct_
     # For now I chose the AOIs that have more hits (since we made it larger)
     # Please be aware in the analysis that this might still change when I can check the Tobii project
 
-    'AOI_hit_continuity_ver1_cont_supr_event_left' = 'AOI_hit_[continuity_ver1_n_cont_-_Rectangle_2]',
-    'AOI_hit_continuity_ver1_cont_supr_event_right' = 'AOI_hit_[continuity_ver1_n_cont_-_Rectangle_1]',
-    'AOI_hit_continuity_ver1_test_supr_event_left' = 'AOI_hit_[continuity_ver1_n_test_-_Rectangle]',
-    'AOI_hit_continuity_ver1_test_supr_event_right' = 'AOI_hit_[continuity_ver1_n_test_-_Rectangle_1]',
+    'AOI_hit_continuity_ver1_cont_barrier_right' = 'AOI_hit_[continuity_ver1_n_cont_-_barrier_right]',
+    'AOI_hit_continuity_ver1_cont_barrier_right' = 'AOI_hit_[continuity_ver1_n_cont_-_barrier_right]',
+    'AOI_hit_continuity_ver1_test_barrier_left' = 'AOI_hit_[continuity_ver1_n_test_-_barrier_left]',
+    'AOI_hit_continuity_ver1_test_barrier_left' = 'AOI_hit_[continuity_ver1_n_test_-_barrier_left]',
 
-    'AOI_hit_continuity_ver1_cont_whole_screen'  = 'AOI_hit_[continuity_ver1_n_cont_-_Cont_Ver1_WholeScreen]',
-    'AOI_hit_continuity_ver1_test_whole_screen' = 'AOI_hit_[continuity_ver1_n_test_-_Cont_Ver1_WholeScreen]',
+    'AOI_hit_continuity_ver1_cont_whole_screen'  = 'AOI_hit_[continuity_ver1_n_cont_-_whole_screen]',
+    'AOI_hit_continuity_ver1_test_whole_screen' = 'AOI_hit_[continuity_ver1_n_test_-_whole_screen]',
     
     #Continuity Ver 2
 
-    'AOI_hit_continuity_ver2_cont_apple' = 'AOI_hit_[continuity_ver2_n_cont_-_Ellipse]',
-    'AOI_hit_continuity_ver2_test_apple' = 'AOI_hit_[continuity_ver2_n_test_-_Ellipse]',
+    'AOI_hit_continuity_ver2_cont_apple' = 'AOI_hit_[continuity_ver2_n_cont_-_apple]',
+    'AOI_hit_continuity_ver2_test_apple' = 'AOI_hit_[continuity_ver2_n_test_-_apple]',
 
-    'AOI_hit_continuity_ver2_cont_supr_event' = 'AOI_hit_[continuity_ver2_n_cont_-_Rectangle_1]',
-    'AOI_hit_continuity_ver2_test_supr_event' = 'AOI_hit_[continuity_ver2_n_test_-_Rectangle_1]',
+    'AOI_hit_continuity_ver2_cont_gap_between_barriers' = 'AOI_hit_[continuity_ver2_n_cont_-_gap_between_barriers]',
+    'AOI_hit_continuity_ver2_test_gap_between_barriers' = 'AOI_hit_[continuity_ver2_n_test_-_gap_between_barriers]',
 
-    'AOI_hit_continuity_ver2_cont_whole_screen' = 'AOI_hit_[continuity_ver2_n_cont_-_Cont_Ver2_WholeScreen]',
-    'AOI_hit_continuity_ver2_test_whole_screen' = 'AOI_hit_[continuity_ver2_n_test_-_Cont_Ver2_WholeScreen]',
+    'AOI_hit_continuity_ver2_cont_whole_screen' = 'AOI_hit_[continuity_ver2_n_cont_-_whole_screen]',
+    'AOI_hit_continuity_ver2_test_whole_screen' = 'AOI_hit_[continuity_ver2_n_test_-_whole_screen]',
 
   )
 
@@ -183,7 +193,90 @@ sample_data <- eye_data %>%
     Validity_left,
     Validity_right
   )
+
+
+sample_data
+str(sample_data)
 ```
+
+# Check how much they have seen
+```{r}
+library(dplyr)
+
+gaze_ip <- sample_data %>%
+  mutate(
+    onscreen =
+      !is.na(Gaze_point_X) &
+      !is.na(Gaze_point_Y) &
+      Gaze_point_X >= 0 & Gaze_point_X < 1920 &
+      Gaze_point_Y >= 0 & Gaze_point_Y < 1080
+  ) %>%
+  arrange(subject, video_file, RECORDING_SESSION_LABEL, time_frame) %>%
+  group_by(subject, video_file, RECORDING_SESSION_LABEL) %>%
+  mutate(
+    dt = lead(time_frame) - time_frame
+  ) %>%
+  ungroup()
+
+
+gaze_ip <- gaze_ip %>%
+  mutate(
+    in_IP1 = onscreen &
+      time_frame >= IP_relevant_1st_event_start &
+      time_frame <= IP_relevant_1st_event_stop,
+
+    in_IP2 = onscreen &
+      time_frame >= IP_relevant_2nd_event_start &
+      time_frame <= IP_relevant_2nd_event_stop,
+
+    in_IP3 = onscreen &
+      time_frame >= IP_relevant_3rd_event_start &
+      time_frame <= IP_relevant_3rd_event_stop
+  )
+```
+
+```{r}
+ip_summary <- gaze_ip %>%
+  group_by(
+    video_file,
+    experiment,
+    version,
+    condition,
+    subject,
+    RECORDING_SESSION_LABEL
+  ) %>%
+  summarise(
+    onscreen_time = sum(dt[onscreen], na.rm = TRUE),
+
+    IP1_gaze_time = sum(dt[in_IP1], na.rm = TRUE),
+    IP2_gaze_time = sum(dt[in_IP2], na.rm = TRUE),
+    IP3_gaze_time = sum(dt[in_IP3], na.rm = TRUE),
+
+    IP1_duration = first(IP_relevant_1st_event_stop -
+                          IP_relevant_1st_event_start),
+    IP2_duration = first(IP_relevant_2nd_event_stop -
+                          IP_relevant_2nd_event_start),
+    IP3_duration = first(IP_relevant_3rd_event_stop -
+                          IP_relevant_3rd_event_start),
+
+    .groups = "drop"
+  )
+```
+
+```{r}
+ip_summary <- ip_summary %>%
+  mutate(
+    prop_IP1_of_IP =
+      IP1_gaze_time / IP1_duration,
+
+    prop_IP2_of_IP =
+      IP2_gaze_time / IP2_duration,
+
+    prop_IP3_of_IP =
+      IP3_gaze_time / IP3_duration
+  )
+```
+
 # Define interest periods
 
 * create time variable
@@ -377,7 +470,7 @@ if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
 # Get parameter levels directly from your dataset
 experiments  <- unique(looking_times_long$experiment)
 versions     <- unique(looking_times_long$version)
-aoi_suffixes <- c("whole_screen", "apple", "supr_event",  "supr_event_left",  "supr_event_right")
+aoi_suffixes <- c("whole_screen", "apple", "space_under_apple",  "supr_event_left",  "supr_event_right")
 ip_columns   <- c("looking_time_whole_test_event", "looking_time_end_state", "looking_time_object_moving" )
 
 # Function to generate + save plot
